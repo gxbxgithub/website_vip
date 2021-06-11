@@ -1,0 +1,76 @@
+<!-- 底部图片 -->
+<!-- <div class="footer_img">
+    <img src="/img/footer.jpg" alt="" />
+</div>
+<div class="footer box">
+    <div class="foot_title">帮助每个家庭实现孕育梦</div>
+    <div class="foot_address">西城区北三环路甲29号华龙大厦A座0806好孕帮</div>
+    <div class="foot_phone">预约电话：010-57264599</div>
+    <div class="foot_work_data">(工作日8:30-17:30)</div>
+    <div class="foot_descript">明锐思成版权所有@<a href="https://m.haoyunbang.cn/">haoyunbang</a>京ICP认证1710011号</div>
+</div> -->
+
+<!-- 弹框 -->
+<div class="alert">
+    <!-- 登录 -->
+    <div class="go_login block_list_div" id="go_login">
+        <div class="title"><p>评论</p><a>回复</a></div>
+        <p class="text">亲爱的，快来评论吧！</p>
+        <div class="btns">
+            <a tp="login">登录</a><a tp="login">注册</a>
+        </div>
+    </div>
+    <!-- 回复 -->
+    <div class="go_reply" id="go_reply">
+        <div>
+            <textarea name="reply" onpropertychange="handle(this);" oninput="handle(this);" placeholder="请输入您要回复的内容"></textarea>
+            <p>最多可输入1000个字</p>
+        </div>
+        <div class="login_area">
+            <input type="text" placeholder="图片验证码" class="user_info user_yzm" id="code1">
+            <img id="captcha" onclick="capt()" class="btn btn_gray">
+        </div>
+        <a onclick="reply(this);">回复</a>
+    </div>
+</div>
+<!-- loading -->
+<div id="new_loading" style="width:100%; max-width: 640px; height:100%; z-index: 99999; position: fixed; top: 0; display: none;"></div>
+
+<div class="footer_new">
+    <img src="//img.haoyunbang.cn/m/img/ico_logo_down.png" alt="">
+    <p class="intro">
+        好孕帮  1万名生殖领域专科医生
+        <span>明显降低诊疗费用，大大缩短备孕时间，快速好孕</span>
+    </p>
+    <ul>
+        <li><a href="https://m.haoyunbang.cn/">首页</a></li>
+        <li><a href="https://www.haoyunbang.cn/haoyunbang_zhenliao/">诊疗项目</a></li>
+        <li><a href="https://m.haoyunbang.cn/bk/">百科</a></li>
+        <li><a href="https://m.haoyunbang.cn/topic/">论坛</a></li>
+        <li><a href="https://www.haoyunbang.cn/haoyunbang_aboutwe/">关于我们</a></li>
+    </ul>
+
+    <a href="http://www.haoyunbang.com.cn" class="download buttonTJ" tj_url="app_download" tj_action="click" {?tj_position}tj_position={tj_position}{/tj_position} {?tj_name}tj_name={tj_name}{/tj_name}   {?tj_param}tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId}{/tj_param}  >下载好孕帮，助您更快好孕！</a>
+    <a id="btnApp" class="buttonTJ btnApp" tj_action="click" tj_position="app_download_open">打开APP</a>
+</div>
+<style>
+    .btnApp{
+      position: fixed;
+      z-index: 1000;
+      bottom: 25px;
+      left: 50%;
+      font-size: 14px;
+      transform: translateX(-50%);
+      display: none;
+      background: linear-gradient(90deg, #F78 0, rgb(248, 104, 140) 100%);
+      color: #fff;
+      width: 80px;
+      line-height: 27.5px;
+      text-align: center;
+      border-radius: 25px;
+    }
+    .btnApp:hover{
+      color: #fff;
+    }
+  </style>
+  <script src="//img.haoyunbang.cn/cooperate_gw/js/jquery.js"></script>

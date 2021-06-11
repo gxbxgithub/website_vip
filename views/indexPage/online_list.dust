@@ -1,0 +1,52 @@
+{>"pages/layouts/master" /} 
+{<title}怎样才能怀孕_不孕不育检查项目-诊断项目-好孕帮{/title}
+{<keywords}怎样才能怀孕，不孕不育检查项目{/keywords}
+{<description}怎样才能怀孕?【针对不容易怀孕的人】 备孕多年一直不孕。首先, 1、检查一下卵巢排卵情况好不好  2、男方精子质量如何  3、子宫内膜情况如何 4、激素水平如何。好孕帮针对不孕用户进行一对一的病情分析,并提供整体医疗服务与解决方案。{/description}
+
+<style>
+    .suspendDiv{display:none;}
+</style>
+
+{<body} 
+<!-- 医生直播 -->
+<div class="doctor_live act_item box" id="online">
+    <h4>医生直播</h4>
+    <div class="live_list">
+        <ul>
+            {#chatroom.data}
+            <li style="display: {@lt key=$idx value=10 type="number"} block {:else} none {/lt};">
+                <a href="{url}">
+                <div class="left_img">
+                    <div class="people_num">{@math key=room_user_num method="add" operand=min_user_count/}人参与</div>
+                    <img src="//img.haoyunbang.cn/m/img/icon_open.png" alt="" class="open trans"/>
+                    <img src="{show_img}" alt="" />
+                </div>
+                <div class="right_menu">
+                    <h5>{room_name}</h5>
+                    <div class="doctor_name">
+                        <p>{doctors[0].doct_name}</p>
+                        <p>{doctors[0].doct_pro}</p>
+                    </div>
+                </div>
+                </a>
+            </li>{~n}
+            {/chatroom.data}
+
+        </ul>
+    </div>	
+    <div style="clear:both"></div>
+    <a class="show_more show_more_activities" name="live_list">显示更多</a>
+</div>
+
+{/body}
+{<script}
+    <!-- <script src="/js/index.js?v=6.3"></script> -->
+    <script>
+        $('.show_more_activities').on('click', function(){
+            var $this = $(this),
+                name = $this.attr('name');
+            $('.' + name).find('li').show();
+            $this.hide();
+        })
+    </script>
+{/script}

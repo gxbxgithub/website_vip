@@ -1,0 +1,179 @@
+diff a/mobile/views/indexPage/success_case.dust b/mobile/views/indexPage/success_case.dust	(rejected hunks)
+@@ -256,86 +256,111 @@
+             </div>
+         </div>
+     </div>
++=======
++    {! 国内试管展示 !}
++    {@eq key=flag  value=1}
++>>>>>>> 68fe898f2e866c46ab06b61b4a90b3947908308b
+     <div class="xiezuo">
+-        <div class="xiezuo_title12">汇聚全国权威生殖专家 </div>
+-        <div class="xiezuo_title13">为您试管助孕</div>
+-        <img src="//img.haoyunbang.cn/m/img/bk_jh19.png" alt="" class="xiezuo_title_img">
+-        <div class="xiezuo_box1">
+-            <div class="xiezuo_box1_con1">
+-                <img src="//img.haoyunbang.cn/m/img/bk_jh8.png" alt="" class="xiezuo_box1_con1_img1">
+-                <div class="xiezuo_box1_con1_p1">
+-                    成功率高
++            <div class="xiezuo_title12">汇聚全国权威生殖专家 </div>
++            <div class="xiezuo_title13">为您试管助孕</div>
++            <img src="//img.haoyunbang.cn/m/img/bk_jh19.png" alt="" class="xiezuo_title_img">
++            <div class="xiezuo_box1">
++                <div class="xiezuo_box1_con1">
++                    <img src="//img.haoyunbang.cn/m/img/bk_jh8.png" alt="" class="xiezuo_box1_con1_img1">
++                    <div class="xiezuo_box1_con1_p1">
++                        成功率高
++                    </div>
++                    <div class="xiezuo_box1_con1_p2">多专家协作提高成功率</div>
+                 </div>
+-                <div class="xiezuo_box1_con1_p2">多专家协作提高成功率</div>
+-            </div>
+-            <div class="xiezuo_box1_con1">
+-                <img src="//img.haoyunbang.cn/m/img/bk_jh10.png" alt="" class="xiezuo_box1_con1_img1">
+-                <div class="xiezuo_box1_con1_p1">
+-                    时间短
++                <div class="xiezuo_box1_con1">
++                    <img src="//img.haoyunbang.cn/m/img/bk_jh10.png" alt="" class="xiezuo_box1_con1_img1">
++                    <div class="xiezuo_box1_con1_p1">
++                        时间短
++                    </div>
++                    <div class="xiezuo_box1_con1_p2">避免多次转诊加快治疗</div>
+                 </div>
+-                <div class="xiezuo_box1_con1_p2">避免多次转诊加快治疗</div>
+-            </div>
+-            <div class="xiezuo_box1_con1">
+-                <img src="//img.haoyunbang.cn/m/img/bk_jh9.png" alt="" class="xiezuo_box1_con1_img1">
+-                <div class="xiezuo_box1_con1_p1">
+-                    费用省
++                <div class="xiezuo_box1_con1">
++                    <img src="//img.haoyunbang.cn/m/img/bk_jh9.png" alt="" class="xiezuo_box1_con1_img1">
++                    <div class="xiezuo_box1_con1_p1">
++                        费用省
++                    </div>
++                    <div class="xiezuo_box1_con1_p2">减少无效诊疗 大大降低诊费</div>
+                 </div>
+-                <div class="xiezuo_box1_con1_p2">减少无效诊疗 大大降低诊费</div>
++            </div>
++            <div class="xiezuo_btn1" onclick="connect_zhichi()">
++                咨询专家，我的试管疑问
+             </div>
+         </div>
+-        <div class="xiezuo_btn1" onclick="connect_zhichi()">
+-            咨询专家，我的试管疑问
+-        </div>
+-    </div>
+-    <div class="xiezuo">
+-        <div class="xiezuo_title12">精密化治疗，保障试管成功率 </div>
+-        <img src="//img.haoyunbang.cn/m/img/guonei_succes_4.png" alt="" class="xiezuo_title12_img1 xiezuo_title12_img2">
+-        <img src="//img.haoyunbang.cn/m/img/guonei_succes_6.png" alt="" class="xiezuo_title12_img1">
+-        <img src="//img.haoyunbang.cn/m/img/guonei_succes_1.png" alt="" class="xiezuo_title12_img1">
+-        <img src="//img.haoyunbang.cn/m/img/guonei_succes_2.png" alt="" class="xiezuo_title12_img1">
+-       
+-        <div class="xiezuo_btn1" onclick="connect_zhichi()">
+-            咨询专家，我的试管疑问
++        <div class="xiezuo">
++            <div class="xiezuo_title12">精密化治疗，保障试管成功率 </div>
++            <img src="//img.haoyunbang.cn/m/img/guonei_succes_4.png" alt="" class="xiezuo_title12_img1 xiezuo_title12_img2">
++            <img src="//img.haoyunbang.cn/m/img/guonei_succes_6.png" alt="" class="xiezuo_title12_img1">
++            <img src="//img.haoyunbang.cn/m/img/guonei_succes_1.png" alt="" class="xiezuo_title12_img1">
++            <img src="//img.haoyunbang.cn/m/img/guonei_succes_2.png" alt="" class="xiezuo_title12_img1">
++           
++            <div class="xiezuo_btn1" onclick="connect_zhichi()">
++                咨询专家，我的试管疑问
++            </div>
+         </div>
+     </div>
+-    <p class="line"></p> 
+-        <div>
+-            <div class="articles">
+-                <div class="xiezuo_title12">试管婴儿好孕日记 </div>
+-                <div class="articles_concont1">
+-                    {#success}
+-                    {@lt key=$idx value=2}
+-                    <div class="articles_concont1_box1">
+-                            <a href="/success_case/info/{id}">
+-                            <img src="{imgs}" alt="" class="articles_concont1_box1_img1">
++   
++    {/eq}
++    {! 成功案例展示 !}
++    <div>
++        <div class="articles">
++            <div class="xiezuo_title12">试管婴儿好孕日记 </div>
++            <div class="articles_concont1">
++                {#new_success_anli}
++                {@lt key=$idx value=2}
++                <div class="articles_concont1_box1">
++                        <a href="/success_case/info/{id}/">
++                        <img src="{imgUrl}" alt="" class="articles_concont1_box1_img1">
++                        </a>
++                        <div class="articles_concont1_box1_p1"><a href="/success_case/info/{id}/">{title}</a></div>
++                    </div>
++                {/lt}
++                {/new_success_anli}
++            </div>
++            <div class="articles_concont2">
++                    {#new_success_anli}
++                    {@gte key=$idx value=2}
++                    <div class="articles_concont2_box">
++                        <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}/">{title}</a></div>
++                        <div class="articles_concont2_box_p2">
++                            {#menu}
++                            <a href="/success_case/info/{id}/">
++                            <div class="articles_concont2_box_sp1">{.}</div>
+                             </a>
+-                            <div class="articles_concont1_box1_p1"><a href="/success_case/info/{id}">{title}</a></div>
++                            {/menu}
+                         </div>
+-                    {/lt}
+-                    {/success}
+-                </div>
+-                <div class="articles_concont2">
+-                        {#success}
+-                        {@gt key=$idx value=2}
++                    </div>
+                     
+-                        <div class="articles_concont2_box">
+-                            <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}">{title}</a></div>
+-                            <div class="articles_concont2_box_p2">
+-                                {#tags_arr_new}
+-                                <a href="/success_case/info/{id}">
+-                                <div class="articles_concont2_box_sp1">{.}</div>
+-                                </a>
+-                                {/tags_arr_new}
+-                            </div>
++                    {/gte}
++                    {/new_success_anli}
++                    {#successData}
++                    <div class="articles_concont2_box">
++                        <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}">{title}</a></div>
++                        <div class="articles_concont2_box_p2">
++                            {#tags}
++                            <a href="/success_case/info/{id}">
++                            <div class="articles_concont2_box_sp1">{.}</div>
++                            </a>
++                            {/tags}
+                         </div>
+-                        
+-                        {/gt}
+-                        {/success}
+-                </div>
++                    </div>
++                    {/successData}
++                    <div class="articles_concont2_box"  v-for="reply in cases_list"  track-by="$index">
++                        <div class="articles_concont2_box_p1"><a href="/success_case/info/{{ reply.id }}/">{{ reply.title }}</a></div>
++                        <div class="articles_concont2_box_p2">
++                            <div class="articles_concont2_box_sp1" v-for="(index,tag) in reply.tags"  v-if="index<2"><a style="color: #FF6688;" href="/success_case/info/{{ reply.id }}/">{{ tag }}</a></div>
++                        </div>
++                    </div>
++                    <a class="show_more" name="guonei" target="_blank">显示更多</a>
+             </div>
+         </div>
+-        <p class="line"></p> 
+-        <img src="//img.haoyunbang.cn/m/img/guonei_succes_5.png" alt="" class="line_img1">
++    </div>
++    <p class="line"></p> 
++    <a target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee""><img src="//img.haoyunbang.cn/m/img/guonei_succes_5.png"  alt="" class="line_img1"></a>
+ 
+     {! 泡脚包 !}
+     <div class="block_list_div add_live_div add_live_div_btn" style="display: none;">

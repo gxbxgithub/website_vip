@@ -1,0 +1,89 @@
+{>"pages/layouts/master" /}
+{<link}
+    <link rel="stylesheet" type="text/css" href="//img.haoyunbang.cn/cooperate_gw/css/swiper-3.4.2.min.css">
+    <link rel="miphtml" href="{mobile_mip}">
+{/link}
+{<body}
+<head>
+  <meta name="applicable-device"content="mobile">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.haoyunbang.cn{yemian_url}" >
+  <meta name="mobile-agent" content="format=html5; url=https://www.haoyunbang.cn{yemian_url}"> 
+</head>
+<div class="yishan12">
+    <div class="biaoq_box">
+        {#biaoqianlist.data}
+        <div class="biaoq_box_box">
+            <a href="/haoyunbaike/s_{id}.html"> 
+            <div class="biaoq_box_con">
+                {tagName}
+            </div>
+            </a>
+        </div>
+        {/biaoqianlist.data}
+    </div>
+    {@gt key=biaoqianlist.total value=0 type="number"}
+                {@gt key=pageCount value=1 type="number"}
+
+                <div class="tcdPageCode tcdPageCode12">
+                    {@gt key=page value=1 type="number"}
+                    <a onclick="appendUrl2('{uurl}', '{@math key=page method="subtract" operand=1/}')" class="prevPage biaoq_box2" style="color:#fff;margin:auto; margin: 20px 30px;">上一页</a>
+                    {:else}
+                    <span class="disabled_l biaoq_box2" style="color:#fff;margin:auto; margin: 20px 30px;">上一页</span>
+                    {/gt}
+
+
+                    {@lt key=page value=pageCount type="number"}
+                    <a onclick="appendUrl2('{uurl}', '{@math key=page method="add" operand=1/}')" class="nextPage biaoq_box2" style="color:#fff;margin:auto; margin: 20px 30px;">下一页 {citysArr}</a>
+                    {:else}
+                    <span class="disabled_r biaoq_box2" style="color:#fff;margin:auto; margin: 20px 30px;">下一页</span>
+                    {/lt}
+                </div>
+                {:else}
+                <div class="tcdPageCode"></div>
+                {/gt}
+            {/gt}
+
+            {@eq key=biaoqianlist.total value=0 type="number"}
+            <p class="no_hospital">暂无相关医院或机构</p>
+            {/eq}
+        
+    {! 
+    <div class="biaoq_box2">
+        下一页
+    </div>
+    !}
+</div>
+ <div class="breadcrumb" style="background-color:#F5F5F5;"><a href="https://m.haoyunbang.cn/" target="_blank">首页 </a><a href="" style="color:#FF6688;">标签</a></div>
+{/body}
+{<script}
+<script>
+
+    function appendUrl1(param_name, param) {
+                  var params = window.location.search;
+                  if (!params) {
+                    params = "";
+                    params +=  param_name + "=" + encodeURI(param);
+                  } else {
+                    params = params.replace("?", "");
+                    var params_arr = params.split("&");
+                    var new_arr = [];
+
+                    params_arr.forEach(function (p) {
+                       if(p.indexOf(param_name)!=-1){
+                         new_arr.push(param_name+"="+param)
+                       }else{
+                         new_arr.push(p)
+                       }
+                    });
+                    if (params.indexOf(param_name) == -1) {
+                      new_arr.push(param_name + "=" + param)
+                    }
+                    params = new_arr.join("&")
+                  }
+                  window.location.href = window.location.pathname + "?" + params;
+                }
+       function appendUrl2(uurl,param){
+           window.location.href = uurl + param + "/";
+       }
+</script>
+{/script}

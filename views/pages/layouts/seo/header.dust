@@ -1,0 +1,7 @@
+{! 头部 !}
+{! head_mobile !}
+<div class="head_mobile">
+    <a href="https://m.haoyunbang.cn/" class="logo"><img src="//img.haoyunbang.cn/cooperate_gw/images/logo.png" alt="好孕帮"></a>
+    <a href="javascript:;" class="hamburger" id="head_mobile_hamburger" style="display: block !important;"><div class="hamburger__icon"></div></a>
+</div>
+{! head_mobile end !}

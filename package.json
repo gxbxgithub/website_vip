@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "web site 2021",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.14.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.20.1",
+    "mongoose": "^4.10.2"
+  }
+}

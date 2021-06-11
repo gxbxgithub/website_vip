@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>{+title/}</title>
+	<meta name="description" content="{+description/}"/>
+	<meta name="keywords" content="{+keywords/}" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+  <meta name="applicable-device"content="mobile">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="content-language" content="zh-CN">
+    
+    {?mobile_shipei}{@ne key=mobile_shipei value=""}
+    <link rel="canonical" href="{mobile_shipei}" >
+    {/ne}
+    {/mobile_shipei}
+    
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/rem.js"></script>
+   
+    <link rel="icon" href="//img.haoyunbang.cn/logo/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="//img.haoyunbang.cn/cooperate_gw/css/swiper-3.4.2.min.css">
+    <!-- <link rel="stylesheet" href="//img.haoyunbang.cn/cooperate_gw/js/fatNav/jquery.fatNav.min.css"> -->
+    <link rel="stylesheet" href="//img.haoyunbang.cn/m/css/index.css?v=0.3.8">
+    <link rel="stylesheet" href="//img.haoyunbang.cn/m/css/hs_index.css?v=0.0.8">
+    <!-- <link rel="stylesheet" href="/css/index.css"> -->
+    <!-- <link rel="stylesheet" href="/css/hs_index.css"> -->
+
+    {+link/}
+</head>
+<body>
+    <div class="main">
+        {>"pages/partial/header_huasheng"/}
+		{+body/}
+		{>"pages/partial/footer_huasheng"/}
+    </div>
+    {! javascript !}
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/jquery.js"></script>
+    {!添加自动播放!}
+    <script src="//img.haoyunbang.cn/m/js/jsmpeg.min.js"></script>
+    {! 封装统计事件 !}
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/tongji.js"></script>
+    {! 手机端 右上角 导航 !}
+    <!-- <script src="//img.haoyunbang.cn/cooperate_gw/js/fatNav/jquery.fatNav.min.js"></script> -->
+    {! swiper !}
+    <!-- <script src="//img.haoyunbang.cn/cooperate_gw/js/swiper-3.4.2.min.js"></script> -->
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/swiper4.0.min.js"></script>
+    {! 切换tab !}
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/responsive.tabs.js"></script>
+    {! layer !}
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/layer_mobile/layer.js"></script>
+    {! loding-spin !}
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/layer-pc/spin.min.js"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/vue.js"></script>
+    {! 复制 !}
+    <script type="text/javascript" src="//img.haoyunbang.cn/cooperate_gw/js/clipboard.js"></script>
+    {! 新添加js !}
+   <script src="//img.haoyunbang.cn/m/js/index.js?v=0.0.4"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/online_zixun.js"></script>
+    <!-- <script src="/js/index.js"></script>   -->
+	{+script/}
+	<script>
+        $(function () {
+            /* 百度统计 */
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?61904fe68bbd833389825b6b1ccd183c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        
+        
+            /* var hm_pc = document.createElement("script");
+            hm_pc.src = "https://hm.baidu.com/hm.js?182700e1a3e4e3d11669515114b4d4f4";
+            var s_pc = document.getElementsByTagName("script")[0];
+            s_pc.parentNode.insertBefore(hm_pc, s_pc); */
+        
+        
+            var hm_m = document.createElement("script");
+            hm_m.src = "https://hm.baidu.com/hm.js?8cd4f7ec2c4b1ebb463936134f12337e";
+            var s_m = document.getElementsByTagName("script")[0];
+            s_m.parentNode.insertBefore(hm_m, s_m);
+        
+        
+            var hm_p = document.createElement("script");
+            hm_p.src = "https://hm.baidu.com/hm.js?57193ebceb988485b91f68bd5e816c8f";
+            var s_p = document.getElementsByTagName("script")[0];
+            s_p.parentNode.insertBefore(hm_p, s_p);
+        
+        
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s_bp = document.getElementsByTagName("script")[0];
+            s_bp.parentNode.insertBefore(bp, s_bp);
+
+            var chatCount = Math.ceil(Math.random()*5);
+            $('.hs_bottom').find('.one_key_chat span').text(chatCount);
+        });
+
+        function init() {
+            var current_user ="";
+            var arr = document.cookie.split("; ");
+            for( var i = 0; i < arr.length; i++){
+                var item = arr[i].split("=");
+                if(item[0] == "hyb_luntan2"){
+                    current_user = item[1];
+                    break;
+                }
+            }
+
+            current_user = decodeURIComponent(current_user);
+            var auth = current_user.split('$$$$');
+            if(auth && auth.length == 3){
+                $('.buttonTJ').attr('tj_userId',auth[2]);
+            }
+        };
+
+
+        if(window.addEventListener){
+            window.addEventListener("load",init,false);
+        }else{
+            window.attachEvent("onload",init);
+        }
+
+        ;String.prototype.trim = function(){
+            return this.replace(/(^\s+)|(\s+$)/g, "");
+        }
+        ;function handle(ev){
+            var $this = $(ev);
+            var val = $this.val().trim(),
+                length = val.length;
+            $this.siblings('p').text('最多可输入' + (1000 - length) + '个字');
+        }
+
+        if($('.head_mobile').width() <= 768){
+            $.fatNav();
+            document.documentElement.style.fontSize = $('.head_mobile').width()/15 + 'px';
+        }
+
+        function UrlValue(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null) return unescape(r[2]); return "";
+        };
+
+        var isHosEnter = '{isHosEnter}';
+        if (UrlValue('from') == 'app' || isHosEnter == 1) {
+            $('.new_suspendDiv').hide();
+            $('.collect_suspend').hide();
+        };
+
+
+        function connect_enter(p, type, objId, hosId){
+            window.location.href = '/online_zixun/?p='+p+'&type='+type+'&objId='+objId+'&hosId='+hosId;
+        };
+    </script>
+    {! 百度熊掌号 !}
+    <script src="//msite.baidu.com/sdk/c.js?appid=1601073466694675"></script>
+</body>
+</html>

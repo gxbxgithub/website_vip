@@ -1,0 +1,856 @@
+{>"pages/layouts/master" /} 
+{<title}{title}{/title}
+{<keywords}{keywords}{/keywords}
+{<description}{description}{/description}
+
+<style>
+    .center .topic_info_div .topic_detail img{display: block!important;margin: 10px auto;}
+    .kepu_zx_a{box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    margin: 15px 0;    
+    line-height: 25px!important;
+    }
+    .post_advert_img_mobil{height: auto;border-bottom:0;}
+    .post_advert_img_mobil img{height: 100%;}
+    .layout{
+            flex:1 !important;
+    }
+    .detail section{
+        padding:0 !important;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="//img.haoyunbang.cn/m/css/new_hw_shiguan.css?v=0.1.1">
+{<body}
+
+<div class="center center3" style="padding-bottom: 0px;">
+    {! 帖子详情 !}
+    <div class="topic_info_div">
+        <p class="title">{info.data.title}</p>
+        <div class="read_unit_first"><p class="fl">{info.data.topic.authorName}</p></div>
+        {>"pages/partial/addgroup"/}
+        {! 内容 !}
+        <div class="topic_detail topic_detail-spac">
+            <div class="detail">
+                <div>{info.data.content|s}</div>
+                {! <div class="read_unit read_unit_two"><p class="fl">{info.data.topic.visitCount}阅读</p><p class="fl">{info.data.topic.replyCount}回复</p><p class="fr">{info.data.publicTime}</p></div> !}
+            </div>
+            <!-- <a class="show_all"><p>展开全文</p></a> -->
+            <!-- <a class="block_list_div m_adv_vs buttonTJ" target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" tj_action="click" tj_position="online_zixun" tj_name="m首页-咨询">
+                <img src="//img.haoyunbang.cn/cooperate_gw/images/m_tube_success_jump.png">
+            </a> -->
+        </div>
+       
+    </div>
+    <!-- 宫腔粘连板块 -->
+    {@eq key=flag value=4}
+    <div class="yishan yishan21 yishan_pt">
+        <div class="cont_divv1">
+                <div class="vexed vexed_spec">
+                    <div class="dongmai_title">
+                        <p class="dongmai_title_p1">宫腔四级手术<span>权威专家</span></p>
+                    </div>
+                    <div class="vexed_content1">
+                        <div class="vexed_content1_top">
+                            <img src="//img.haoyunbang.cn/m/img/maning_3.png" alt="" class="content1_top_touxiang">
+                            <div class="content1_top_box">
+                                <div class="content1_top_box_box1"><span class="content1_top_box_sp">马宁</span><span>主任医师</span></div>
+                                <div class="content1_top_box_box2">首都医科大学附属复兴医院</div>
+                            </div>
+                        </div>
+                        <div class="vexed_content1_p1">
+                            师从中国宫腔镜之母夏恩兰
+                        </div>
+                        <div class="vexed_content1_p1">
+                            师从国际著名生殖医学专家TCLi教授
+                        </div>
+                        <div class="vexed_content1_p1">
+                            擅长妇科内镜手术特别精通宫腔镜手术
+                        </div>
+                        <div class="vexed_content1_cont1">
+                            <img src="//img.haoyunbang.cn/m/img/haoyunxq_12.png" alt="" class="content1_cont1_img">
+                            <div class="content1_cont1_p">医生对你说</div>
+                        </div>
+                        <div class="vexed_content1_cont2">
+                        
+                            <span class="content1_cont2_sp"> <img src="//img.haoyunbang.cn/m/img/haoyunxq_13.png" alt="" class="content1_cont2_img1">宫腔粘连治疗效果的关键：术中恢复正常宫腔形态，医生的经验和手术技巧很重要，术后恢复正常内膜功能，后续治疗方法要正确，预防术后复粘需要多方联合的综合治疗！ <img src="//img.haoyunbang.cn/m/img/haoyunxq_11.png" alt="" class="content1_cont2_img2"></span>
+                        
+                        </div>
+                        <div class="fufa_box2_btn1 buttonTJ" onclick="connect_zhichi()"  tj_action="click" tj_position="zh-gongqiangzhanlian">
+                            <img src="//img.haoyunbang.cn/m/img/fufaxing2-3.png" alt="" class="fufa_box2_btn1_img1">
+                            <div class="fufa_box2_btn1_p1">详细问题咨询专家</div>
+                        </div>
+                    </div>
+                    <div class="dongmai_title">
+                        <p class="dongmai_title_p1">宫腔手术<span>治疗对比</span></p>
+                    </div>
+                <div>
+                        <img src="//img.haoyunbang.cn/m/img/pc_li4.png" alt="" class="pc_li4">
+                    <div class="mengyuejing">
+                            <div class="mengyuejing_div1">常规电切分离术</div>
+                            <img class="mengyuejing_div2" src="//img.haoyunbang.cn/m/img/myj_5.png">
+                            <div class="mengyuejing_div3">水囊扩张分离术</div>
+                    </div>
+                    <div class="mengyuejing1">
+                        <div>
+                                <div class="mengyuejing1_box1">
+                                    <div class="mengyuejing1_box1_content1"></div>
+                                    <div class="mengyuejing1_box1_content2">器械：电刀，电枪，冷刀 </div>
+                                </div>
+                                <div class="mengyuejing1_box1">
+                                    <div class="mengyuejing1_box1_content1"></div>
+                                    <div class="mengyuejing1_box1_content2">效果：由于手术操作难度大，手术同时内膜遭受不同程度算坏，术后复粘率60%以上。 </div>
+                                </div>
+                        </div>
+                        <div class="mengyuejing1_b">
+                                <div class="mengyuejing1_box1">
+                                        <div class="mengyuejing1_box1_content1" style="background-color: #FCC66E;"></div>
+                                        <div class="mengyuejing1_box1_content2" style="color: black;"><span>器械：</span>无创水压+球囊扩张分离</div>
+                                </div>
+                                <div class="mengyuejing1_box1">
+                                        <div class="mengyuejing1_box1_content1" style="background-color: #FCC66E;"></div>
+                                        <div class="mengyuejing1_box1_content2" style="color: black;"><span>效果：</span>分离重度宫腔粘连，扩张宫腔容积，改善子宫供血，预防宫腔粘连。</div>
+                                </div>
+                        </div>   
+                    </div>
+                </div>
+                </div>
+            <div class="fufa_box2_btn1 buttonTJ" onclick="connect_zhichi()"  tj_action="click" tj_position="case-gonqiangzhanlian">
+                <img src="//img.haoyunbang.cn/m/img/fufaxing2-3.png" alt="" class="fufa_box2_btn1_img1">
+                <div class="fufa_box2_btn1_p1">立即问专家，1对1解答</div>
+            </div>
+            <div class="dongmai_title">
+                <p class="dongmai_title_p1">术后<span>综合管理</span></p>
+            </div>
+            <div class="shuhou_cont buttonTJ"  onclick="connect_zhichi()"  tj_action="click" tj_position="case-gonqiangzhanlian">
+                <div class="shuhou_cont_box">
+                    <img src="//img.haoyunbang.cn/m/img/myj_1.png" class="shuhou_content" alt="">
+                    <div class="shuhou_content_div mar_bnt1">医生定期回访</div>
+                </div>
+                <div class="shuhou_cont_box">
+                    <img src="//img.haoyunbang.cn/m/img/myj_2.png" class="shuhou_content" alt="">
+                    <div class="shuhou_content_div mar_bnt1">制定药物治疗方案</div>
+                </div>
+                <div class="shuhou_cont_box">
+                    <img src="//img.haoyunbang.cn/m/img/myj_3.png" class="shuhou_content" alt="">
+                    <div class="shuhou_content_div">促进内膜生长</div>
+                </div>
+                <div class="shuhou_cont_box">
+                    <img src="//img.haoyunbang.cn/m/img/myj_4.png" class="shuhou_content" alt="">
+                    <div class="shuhou_content_div">改善内膜充血</div>
+                </div>
+            </div>
+            <div class="fufa_box2_btn1 buttonTJ" onclick="connect_zhichi()"  tj_action="click" tj_position="case-gonqiangzhanlian">
+                <img src="//img.haoyunbang.cn/m/img/fufaxing2-3.png" alt="" class="fufa_box2_btn1_img1">
+                <div class="fufa_box2_btn1_p1">结合自身情况制定治疗方案</div>
+            </div>
+       
+        </div>
+        
+    </div>
+    <div class="block_list_div xiezuo">
+        <div class="xiezuo_title2">宫腔粘连好孕日记</div>
+        <ul class="hy_case_div box">
+            {#success}
+            <li>
+                <a target="_blank" href="/success_case/info/{id}" rel="nofollow" class="buttonTJ" tj_action="click" tj_position="bk_hycase" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="百科成功案例">
+                    <div class="hy_case_div_fl">
+                        <img src="{imgs}">
+                    </div>
+                    <div class="hy_case_div_fr">
+                        <p class="many_line line_two">{title}</p>
+                        <span class="ellipsis">{tags_arr_new}</span>
+                    </div>
+                </a>
+            </li>
+            {/success}
+        </ul>
+        <a href="https://m.haoyunbang.cn/cases/" class="jiazai_more2">查看更多</a>
+    </div>
+    <div class="post_advert_img_mobil post_advert_img_mobil3">
+        <a target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" class="buttonTJ" tj_action="click" tj_position="case-gonqiangzhanlian" tj_url="bk/">
+                <img src="//img.haoyunbang.cn/cooperate_gw/images/m_tube_success_jump.png" alt="试管包成功">
+        </a>
+    </div>
+    {/eq}
+     <!-- 多囊卵巢板块 -->
+    {@eq key=flag value=5}
+    
+    <div class="dong_box3">
+        <p class="dong_box1_title1">分型诊断，多维治疗</p>
+        <p class="dong_box1_title1">个性化多囊治疗方法</p>
+        <div class="dong_box3_con1">
+            <img src="//img.haoyunbang.cn/m/img/duonz_19.png" alt="" class="dong_box3_con1_img1">
+            <div class="dong_box3_con1_box">
+                <div class="dong_box3_con1_box_top">
+                 <span class="dong_box3_con1_box_top_sp1">高芹</span>
+                 <span class="dong_box3_con1_box_top_sp2">主任医师</span>
+                </div>
+                <div class="dong_box3_con1_box_jingyanbox">
+                    <div class="dong_box3_con1_box_jingyan1">
+                        <div class="dong_box3_con1_box_jingyan1_reduio"></div>
+                        <div class="dong_box3_con1_box_jingyan1_p1">拥有丰富不孕的疑难病例处理经验</div>
+                    </div>
+                    <div class="dong_box3_con1_box_jingyan1">
+                        <div class="dong_box3_con1_box_jingyan1_reduio"></div>
+                        <div class="dong_box3_con1_box_jingyan1_p1"><span>30余年</span>生殖及妇产经验，助孕千万</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dong_box3_con2">
+            <img src="//img.haoyunbang.cn/m/img/duonz_7.png" alt="" class="dong_box3_con2_img1">
+            <div class="dong_box3_con2_title">医生对你说</div>
+            <div class="dong_box3_con2_con">很多患者没有认清多囊的本质，盲目治疗，耗费大量时间，最后仍然以失败告终。因为多囊卵巢综合症在临床表现中有很强的抑制性，具体讲就是1000个患者就会有1000种不同的临床表现，没有完全相同的患者，所以不同的患者需要不同治疗过程和结果。</div>
+            <div class="dong_box1_btn buttonTJ" style="margin-top:10px;" onclick="connect_zhichi()" tj_action="click" tj_position="case-duonang">
+                <img src="//img.haoyunbang.cn/m/img/duonz_2.png" alt="" class="dong_box1_btn_img1">
+                <div class="dong_box1_btn_p1">我的多囊如何治疗，咨询专家</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="dong_box2">
+        <p class="dong_box1_title1">专家分析</p>
+        <p class="dong_box1_title1">98%的多囊患者出现的误区</p>
+        <div class="dong_box2_con">
+            <img src="//img.haoyunbang.cn/m/img/duonz_38.png" alt="" class="dong_box2_con_img1">
+            <img src="//img.haoyunbang.cn/m/img/duonz_39.png" alt="" class="dong_box2_con_img1">
+            <img src="//img.haoyunbang.cn/m/img/duonz_40.png" alt="" class="dong_box2_con_img1">
+            <img src="//img.haoyunbang.cn/m/img/duonz_41.png" alt="" class="dong_box2_con_img1">
+        </div>
+        <div class="dong_box1_btn buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-duonang">
+            <img src="//img.haoyunbang.cn/m/img/duonz_2.png" alt="" class="dong_box1_btn_img1">
+            <div class="dong_box1_btn_p1">我有相关多囊困扰，咨询专家</div>
+        </div>
+    </div>
+    <div class="dong_box4">
+        <p class="dong_box1_title1">更全面，更对症，更快好孕</p>
+        <div class="dong_box4_con">
+            <div class="dong_box4_con_box buttonTJ" style="border-bottom: 1px solid #EEEEEE;border-right: 1px solid #EEEEEE;padding-right:10px">
+                <img src="//img.haoyunbang.cn/m/img/duonz_3.png" alt="" class="dong_box4_con_box_img1" onclick="connect_zhichi()" tj_action="click" tj_position="case-duonang">
+                <div class="dong_box4_con_box_p1">合理用药</div>
+                <div class="dong_box4_con_box_p2">根据不同患者情况，指定用药方案、时间、用量等</div>
+            </div>
+            <div class="dong_box4_con_box buttonTJ" style="border-bottom: 1px solid #EEEEEE;padding-left:10px" onclick="connect_zhichi()" tj_action="click" tj_position="case-duonang">
+                <img src="//img.haoyunbang.cn/m/img/duonz_4.png" alt="" class="dong_box4_con_box_img1">
+                <div class="dong_box4_con_box_p1">促进正常排卵</div>
+                <div class="dong_box4_con_box_p2">受孕快，成功率高，同时有效减少卵巢过度刺激综合征</div>
+            </div>
+            <div class="dong_box4_con_box buttonTJ" style="border-right: 1px solid #EEEEEE;padding-right:10px" onclick="connect_zhichi()" tj_action="click" tj_position="case-duonang">
+                <img src="//img.haoyunbang.cn/m/img/duonz_5.png" alt="" class="dong_box4_con_box_img1">
+                <div class="dong_box4_con_box_p1">动态监测</div>
+                <div class="dong_box4_con_box_p2">监测子宫内膜变化，为孕卵着床创造一个好的受孕环境</div>
+            </div>
+            <div class="dong_box4_con_box buttonTJ" style="padding-left:10px" onclick="connect_zhichi()" tj_action="click" tj_position="case-duonang">
+                <img src="//img.haoyunbang.cn/m/img/duonz_6.png" alt="" class="dong_box4_con_box_img1">
+                <div class="dong_box4_con_box_p1">受孕指导</div>
+                <div class="dong_box4_con_box_p2">治疗后由专家亲自指导同房，最快当月即可实现怀孕</div>
+            </div>
+        </div>
+    </div>
+    <div class="block_list_div xiezuo">
+        <div class="xiezuo_title2">多囊姐妹好孕日记</div>
+        <ul class="hy_case_div box">
+            {#success}
+            <li>
+                <a target="_blank" href="/success_case/info/{id}" rel="nofollow" class="buttonTJ" tj_action="click" tj_position="bk_hycase" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="百科成功案例">
+                    <div class="hy_case_div_fl">
+                        <img src="{imgs}">
+                    </div>
+                    <div class="hy_case_div_fr">
+                        <p class="many_line line_two">{title}</p>
+                        <span class="ellipsis">{tags_arr_new}</span>
+                    </div>
+                </a>
+            </li>
+            {/success}
+        </ul>
+        <a href="https://m.haoyunbang.cn/cases/" class="jiazai_more2">查看更多</a>
+    </div>
+    <div class="post_advert_img_mobil post_advert_img_mobil3">
+        <a target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" class="buttonTJ" tj_action="click" tj_position="case-duonang" tj_url="bk/">
+                <img src="//img.haoyunbang.cn/cooperate_gw/images/m_tube_success_jump.png" alt="试管包成功">
+        </a>
+    </div>
+    {/eq}
+    {!首个banner!}
+    {@eq key=flag value=2}
+        {! 泰国页展示泰国试管图片 !}
+        <a class="block_list_div m_adv_vs buttonTJ" target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" tj_action="click" tj_position="case-thailand" tj_name="m首页-咨询">
+            <img src="http://img.haoyunbang.cn/m/img/20190903153142.png">
+        </a>
+    {/eq}
+    {@eq key=flag value=1}
+        {! 普通页面展示图片 !}
+        <a class="block_list_div m_adv_vs buttonTJ" target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" tj_action="click" tj_position="case-guonei" tj_name="m首页-咨询">
+            <img src="//img.haoyunbang.cn/cooperate_gw/images/m_tube_success_jump.png">
+        </a>
+    {/eq}
+    {! 国外试管展示 !}
+    {@eq key=flag value=2}
+        <p class="line"></p> 
+        <div class="guonei_div2" style="margin-top: 20px;">
+            <div class="xiezuo_title12">泰国试管优势对比 </div>
+            <div class="vexed_content2">
+                <div class="vexed_content2_le">中国</div>
+                <div class="vexed_content2_con"><span class="vexed_content2_con_sp">vs</span></div>
+                <div class="vexed_content2_re">泰国</div>
+            </div>
+            <div class="fangshe1">
+                <div class="fangshe_p1">
+                    <div class="fangshe_p1_le">30%-40%左右</div>
+                    <div class="fangshe_p1_e_p1">成功率</div>
+                    <div class="fangshe_p1_rer">
+                    <div class="fangshe_p1_re">
+                    
+                        <span class="fangshe_p1_e_p2">75%以上</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="fangshe_p1">
+                    <div class="fangshe_p1_le">方案选择少，卵子 质量数量无保障</div>
+                    <div class="fangshe_p1_e_p1">促排方案</div>
+                    <div class="fangshe_p1_rer">
+                    <div class="fangshe_p1_re">
+                        
+                        <span class="fangshe_p1_e_p2">个性化促排，保证卵子质量和数量</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="fangshe_p1">
+                    <div class="fangshe_p1_le"><p>医院流水线操作</p><p>医生不固定</p> </div>
+                    <div class="fangshe_p1_e_p1">生殖专家</div>
+                    <div class="fangshe_p1_rer">
+                    <div class="fangshe_p1_re">
+                    
+                        <span class="fangshe_p1_e_p2"><p>多位生殖名医协作</p><p>1对1治疗</p></span>
+                    </div>
+                    </div>
+                </div>
+                <div class="fangshe_p1">
+                    <div class="fangshe_p1_le">少数疾病</div>
+                    <div class="fangshe_p1_e_p1">基因诊断</div>
+                    <div class="fangshe_p1_rer">
+                    <div class="fangshe_p1_re">
+                    
+                        <span class="fangshe_p1_e_p2">125种疾病</span>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="fangshe_p1">
+                    <div class="fangshe_p1_le"><p>法律限制</p><p>不可选男女</p></div>
+                    <div class="fangshe_p1_e_p1">个性选择</div>
+                    <div class="fangshe_p1_rer">
+                    <div class="fangshe_p1_re">
+                    
+                        <span class="fangshe_p1_e_p2"><p>男女可定制</p><p>双胞胎也可</p></span>
+                    </div>
+                    </div>
+                </div>
+            
+            </div>
+            <img src="//img.haoyunbang.cn/m/img/guwaisuc_1.png" tj_action="click" tj_position="case-thailand" alt="" onclick="connect_zhichi()" class="fangshe_p1_img2 buttonTJ">
+        </div>
+        <div class="xiezuo  xiezuo_boxcn_cont1">
+            <div class="xiezuo_title12">海外专家团队为你解答 </div>
+            <div class="swiper-container xiezuo_boxcn">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="xiezuo_boxcn_con">
+                            <img src="/css/images/hry.png" alt="" class="xiezuo_boxcn_con_img1">
+                            <div class="xiezuo_boxcn_con_right">
+                                <div class="xiezuo_boxcn_con_right_p1">黄荣业</div>
+                                <div class="xiezuo_boxcn_con_right_p2">亚洲试管婴儿之父</div>
+                                <div class="xiezuo_boxcn_con_right_p3">专业擅长：生殖内分泌和不孕症，卵巢功能早衰</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xiezuo_boxcn_con">
+                            <img src="/css/images/mk.png" alt="" class="xiezuo_boxcn_con_img1">
+                            <div class="xiezuo_boxcn_con_right">
+                                <div class="xiezuo_boxcn_con_right_p1">马克•素瑞</div>
+                                <div class="xiezuo_boxcn_con_right_p2">全球顶尖IVF技术专家</div>
+                                <div class="xiezuo_boxcn_con_right_p3">专业擅长：生殖内分泌和不孕症，生殖外科手术和试管婴儿技术</div>
+                            </div>
+                        </div>
+                    </div> <div class="swiper-slide">
+                        <div class="xiezuo_boxcn_con">
+                            <img src="//img.haoyunbang.cn/m/img/guwaisuc_10.png" alt="" class="xiezuo_boxcn_con_img1">
+                            <div class="xiezuo_boxcn_con_right">
+                                <div class="xiezuo_boxcn_con_right_p1">妈祖蓬   苏帕瑟</div>
+                                <div class="xiezuo_boxcn_con_right_p2">泰国顶级试管婴儿专家</div>
+                                <div class="xiezuo_boxcn_con_right_p3">专业擅长：生殖内分泌和不孕症的诊疗，尤其是卵巢功能低下，试管婴儿技术</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev xiezuo_boxcn_swiper-button-prev"></div>
+                <div class="swiper-button-next xiezuo_boxcn_swiper-button-next "></div>
+            </div>
+            <div class="tim_bottom1">
+                <div class="sem_answer buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-thailand">
+                <div class="answer_img"><img  src="//img.haoyunbang.cn/m/img/guwaisuc_2.png"/></div>
+                <div class="answer_span">
+                    <p class="answer_p1">问受孕率</p>
+                    <p class="answer_p2">success ratio</p>
+                </div>
+            </div>
+            <div class="sem_answer buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-thailand">
+                <div class="answer_img"><img  src="//img.haoyunbang.cn/m/img/guwaisuc_5.png"/></div>
+                <div class="answer_span">
+                    <p class="answer_p1">问费用</p>
+                    <p class="answer_p2">ask thecost</p>
+                </div>
+            </div>
+            <div class="sem_answer buttonTJ" onclick="connect_zhichi()" style="margin-bottom: 0;" tj_action="click" tj_position="case-thailand">
+                <div class="answer_img"><img  src="//img.haoyunbang.cn/m/img/guwaisuc_4.png"/></div>
+                <div class="answer_span">
+                    <p class="answer_p1">定制宝宝</p>
+                    <p class="answer_p2">custom baby</p>
+                </div>
+            </div>
+            <div class="sem_answer buttonTJ" onclick="connect_zhichi()" style="margin-bottom: 0;" tj_action="click" tj_position="case-thailand">
+                <div class="answer_img"><img  src="//img.haoyunbang.cn/m/img/guwaisuc_3.png"/></div>
+                <div class="answer_span">
+                    <p class="answer_p1">问技术</p>
+                    <p class="answer_p2">technology</p>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            </div>
+        </div>
+        <p class="line"></p> 
+        <div>
+            <div class="articles">
+                <div class="xiezuo_title12">泰国婴儿好孕日记 </div>
+                <div class="articles_concont1">
+                    {#success}
+                    {@lt key=$idx value=2}
+                    <div class="articles_concont1_box1">
+                            <a href="/success_case/info/{id}">
+                            <img src="{imgs}" alt="" class="articles_concont1_box1_img1">
+                            </a>
+                            <div class="articles_concont1_box1_p1"><a href="/success_case/info/{id}">{title}</a></div>
+                        </div>
+                    {/lt}
+                    {/success}
+                </div>
+                <div class="articles_concont2">
+                        {#success}
+                        {@gte key=$idx value=2}
+                    
+                        <div class="articles_concont2_box">
+                            <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}">{title}</a></div>
+                            <div class="articles_concont2_box_p2">
+                                {#tags_arr_new}
+                                <a href="/success_case/info/{id}">
+                                <div class="articles_concont2_box_sp1">{.}</div>
+                                </a>
+                                {/tags_arr_new}
+                            </div>
+                        </div>
+                        
+                        {/gte}
+                        {/success}
+                        {#successData}
+                            <div class="articles_concont2_box">
+                                <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}">{title}</a></div>
+                                <div class="articles_concont2_box_p2">
+                                    {#tags}
+                                    <a href="/success_case/info/{id}">
+                                    <div class="articles_concont2_box_sp1">{.}</div>
+                                    </a>
+                                    {/tags}
+                                </div>
+                            </div>
+                        {/successData}
+                        <div class="articles_concont2_box"  v-for="reply in cases_list"  track-by="$index">
+                            <div class="articles_concont2_box_p1"><a href="/success_case/info/{{ reply.id }}/">{{ reply.title }}</a></div>
+                            <div class="articles_concont2_box_p2">
+                                <div class="articles_concont2_box_sp1" v-for="(index,tag) in reply.tags"  v-if="index<2"><a style="color: #FF6688;" href="/success_case/info/{{ reply.id }}/">{{ tag }}</a></div>
+                            </div>
+                        </div>
+                        <a class="show_more" name="taiguo">显示更多</a>
+                </div>
+            </div>
+        </div>
+        <p class="line"></p> 
+        <a class="buttonTJ" target="_blank" tj_action="click" tj_position="case-thailand" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee""><img src="//img.haoyunbang.cn/m/img/guonei_succes_9.png"  alt="" class="line_img1"></a>
+        <p class="line"></p> 
+    {/eq}
+
+       {! 生男女 !}
+       {@eq key=flag value=6}
+       <div class="articles">
+           <p class="articles_title2">专家解答-如何生男女</p>
+           <p class="jieda">第三代试管婴儿</p>
+           <div class="fenbu_box1 fenbu_boxsp">
+               <div>
+                   <div class="jiedabox1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="bk-boyandgirl" tj_url="home/bk/">
+                       <div class="jiedabox1_box1">
+                           <img src="//img.haoyunbang.cn/m/img/shengnan1_9.png" alt="" class="jiedabox1_box1_img1">
+                           <div class="jiedabox1_box1_con1">
+                               <div class="jiedabox1_box1_con1_p1">妈祖蓬   苏帕瑟</div>
+                               <div class="jiedabox1_box1_con1_p2">生殖医学博士  医院基因学博士</div>
+                               <div class="jiedabox1_box1_con1_p3">泰国辅助生殖协会会员</div>
+                               <div class="jiedabox1_box1_con1_p3">泰国皇家产科和妇科学院会员</div>
+                           </div>
+                       </div>
+                       <div class="jiedabox1_box2">
+                           <div class="jiedabox1_box2_con">第三代试管婴儿在检测胚胎的遗传物质进行分析时一般采用单细胞DNA分析法，主要是聚合酶链反应（PCR）和荧光原位杂交（FISH），前者检测男女性别和单基因遗传病，后者检测性别和染色体病。但该项技术现在性别在国内是不被允许的，在美国、泰国等性别选择有很大的宽容度。</div>
+                           <div class="jiedabox1_box2_con2">
+                               <div class="jiedabox1_box2_con2_btn1">成功率高于国内</div>
+                               <div class="jiedabox1_box2_con2_btn2">性别定制，龙凤双胎</div>
+                           </div>
+                       </div>
+                       <div class="jiedabox1_box3_con12">
+                           <img src="//img.haoyunbang.cn/m/img/shengnan1_4.png" alt="" class="jiedabox1_box3_img">
+                           <div class="jiedabox1_box3_p1">泰国专家1对1咨询</div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <p class="line"></p>
+       <div class="articles">
+           <p class="articles_title2">专家解答-如何生男女</p>
+           <p class="jieda">中西医结合调理</p>
+           <div class="fenbu_box1 fenbu_boxsp">
+                   <div>
+                       <div class="jiedabox1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="bk-boyandgirl" tj_url="home/bk/">
+                           <div class="jiedabox1_box1">
+                               <img src="//img.haoyunbang.cn/m/img/shengnan1_13.png" alt="" class="jiedabox1_box1_img1">
+                               <div class="jiedabox1_box1_con1">
+                                   <div class="jiedabox1_box1_con1_p1">刘秀平</div>
+                                   <div class="jiedabox1_box1_con1_p2">首席医疗主任</div>
+                                   <div class="jiedabox1_box1_con1_p3">20余年从事不孕不育诊疗工作经验，对个性化的精卵调理、子宫内环境调理以及精准保胎，有丰富的临床经验</div>
+                               </div>
+                           </div>
+                           <div class="jiedabox1_box3">
+                               <div class="jiedabox1_box2_con">男性X和Y精子具有不同的特性，X精子比Y精子更大，移动较慢，存活的时间也更长，X精子与卵子结合生女孩。中医调理，可以在男性方面提高精子质量，增加Y精子活跃程度，使得Y精子和卵子结合生男孩的机率更高。</div>
+                               <div class="jiedabox1_box2_con2">
+                                   <div class="jiedabox1_box2_con2_btn1">提高精子质量</div>
+                                   <div class="jiedabox1_box2_con2_btn2">增加Y精子活跃度</div>
+                               </div>
+                           </div>
+                           <div class="jiedabox1_box3_con12">
+                               <img src="//img.haoyunbang.cn/m/img/shengnan1_4.png" alt="" class="jiedabox1_box3_img">
+                               <div class="jiedabox1_box3_p1">专家1对1咨询</div>
+                           </div>
+                       </div>
+                   </div>
+           </div>
+       </div>
+       {! 生男女成功案例展示 !}
+       <div class="block_list_div xiezuo">
+           <div class="xiezuo_title2">生男女好孕日记</div>
+           <ul class="hy_case_div box">
+               {#success}
+               <li>
+                   <a target="_blank" href="/success_case/info/{id}" rel="nofollow" class="buttonTJ" tj_action="click" tj_position="bk_hycase" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="百科成功案例">
+                       <div class="hy_case_div_fl">
+                           <img src="{imgs}">
+                       </div>
+                       <div class="hy_case_div_fr">
+                           <p class="many_line line_two">{title}</p>
+                           <span class="ellipsis">{tags_arr_new}</span>
+                       </div>
+                   </a>
+               </li>
+               {/success}
+           </ul>
+           <a href="https://m.haoyunbang.cn/cases/" class="jiazai_more2">查看更多</a>
+       </div>
+       <a class="buttonTJ" target="_blank" tj_action="click" tj_position="case-thailand" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee""><img src="http://img.haoyunbang.cn/m/img/shengnan1_5.png"  alt="" class="line_img1"></a>
+       <p class="line"></p> 
+
+   {/eq}
+    
+    <!-- 成功案例集合页 -->
+    {@eq key=flag value=3}
+        <div class="xiezuo xiezuo_sl" >
+            <div class="xiezuo_title2">业界尊称“输卵管之母”</div>
+            <div class="box2 buttonTJ"  onclick="connect_zhichi()" tj_action="click" tj_position="case-shuluanguan" tj_url="home/bk/">
+                <img src="//img.haoyunbang.cn/m/img/bk_shu2.png" alt="" class="allimg">
+            </div>
+            <div class="box">
+                <div>
+                    <a onclick="connect_zhichi()" tj_action="click" tj_position="case-shuluanguan" tj_url="home/bk/"><img src="//img.haoyunbang.cn/m/img/bk_shu3.png" alt="" class="allimg medicine-img buttonTJ"></a>
+                    <a onclick="connect_zhichi()" tj_action="click" tj_position="case-shuluanguan" tj_url="home/bk/"><img src="//img.haoyunbang.cn/m/img/bk_shu6.png" alt="" class="allimg buttonTJ"></a>
+                </div>
+            </div>
+        </div>
+        <div class="block_list_div xiezuo">
+            <div class="xiezuo_title2">输卵管治疗好孕日记</div>
+            <ul class="hy_case_div box">
+                {#success}
+                <li>
+                    <a target="_blank" href="/success_case/info/{id}" rel="nofollow" class="buttonTJ" tj_action="click" tj_position="bk_hycase" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="百科成功案例">
+                        <div class="hy_case_div_fl">
+                            <img src="{imgs}">
+                        </div>
+                        <div class="hy_case_div_fr">
+                            <p class="many_line line_two">{title}</p>
+                            <span class="ellipsis">{tags_arr_new}</span>
+                        </div>
+                    </a>
+                </li>
+                {/success}
+            </ul>
+            <a href="https://m.haoyunbang.cn/cases/" class="jiazai_more2">查看更多</a>
+        </div>
+        <div class="post_advert_img_mobil post_advert_img_mobil3">
+            <a target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" class="buttonTJ" tj_action="click" tj_position="case-shuluanguan" tj_url="bk/">
+                    <img src="//img.haoyunbang.cn/cooperate_gw/images/m_tube_success_jump.png" alt="试管包成功">
+            </a>
+        </div>
+    {/eq}
+   
+    {! 国内试管展示 !}
+    {@eq key=flag  value=1}
+        <div class="xiezuo">
+                <div class="xiezuo_title12">汇聚全国权威生殖专家</div>
+                <div class="xiezuo_title13">为您试管助孕</div>
+                <img src="//img.haoyunbang.cn/m/img/bk_jh19.png" alt="" class="xiezuo_title_img">
+                <div class="xiezuo_box1">
+                    <div class="xiezuo_box1_con1">
+                        <img src="//img.haoyunbang.cn/m/img/bk_jh8.png" alt="" class="xiezuo_box1_con1_img1">
+                        <div class="xiezuo_box1_con1_p1">
+                            成功率高
+                        </div>
+                        <div class="xiezuo_box1_con1_p2">多专家协作提高成功率</div>
+                    </div>
+                    <div class="xiezuo_box1_con1">
+                        <img src="//img.haoyunbang.cn/m/img/bk_jh10.png" alt="" class="xiezuo_box1_con1_img1">
+                        <div class="xiezuo_box1_con1_p1">
+                            时间短
+                        </div>
+                        <div class="xiezuo_box1_con1_p2">避免多次转诊加快治疗</div>
+                    </div>
+                    <div class="xiezuo_box1_con1">
+                        <img src="//img.haoyunbang.cn/m/img/bk_jh9.png" alt="" class="xiezuo_box1_con1_img1">
+                        <div class="xiezuo_box1_con1_p1">
+                            费用省
+                        </div>
+                        <div class="xiezuo_box1_con1_p2">减少无效诊疗 大大降低诊费</div>
+                    </div>
+                </div>
+                <div class="xiezuo_btn1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-guonei">
+                    咨询专家，我的试管疑问
+                </div>
+        </div>
+        <div class="xiezuo">
+            <div class="xiezuo_title12">精密化治疗，保障试管成功率 </div>
+            <img src="//img.haoyunbang.cn/m/img/guonei_succes_4.png" alt="" class="xiezuo_title12_img1 buttonTJ xiezuo_title12_img2" onclick="connect_zhichi()" tj_action="click" tj_position="case-guonei">
+            <img src="//img.haoyunbang.cn/m/img/guonei_succes_6.png" alt="" class="xiezuo_title12_img1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-guonei">
+            <img src="//img.haoyunbang.cn/m/img/guonei_succes_1.png" alt="" class="xiezuo_title12_img1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-guonei">
+            <img src="//img.haoyunbang.cn/m/img/guonei_succes_2.png" alt="" class="xiezuo_title12_img1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-guonei">
+            
+            <div class="xiezuo_btn1 buttonTJ" onclick="connect_zhichi()" tj_action="click" tj_position="case-guonei">
+                制定我的试管方案
+            </div>
+        </div>
+        <p class="line"></p> 
+        {! 国内成功案例展示 !}
+        <div>
+            <div class="articles">
+                <div class="xiezuo_title12">试管婴儿好孕日记 </div>
+                <div class="articles_concont1">
+                    {#new_success_anli}
+                    {@lt key=$idx value=2}
+                    <div class="articles_concont1_box1">
+                            <a href="/success_case/info/{id}/">
+                            <img src="{imgUrl}" alt="" class="articles_concont1_box1_img1">
+                            </a>
+                            <div class="articles_concont1_box1_p1"><a href="/success_case/info/{id}/">{title}</a></div>
+                        </div>
+                    {/lt}
+                    {/new_success_anli}
+                </div>
+                <ul class="articles_concont2" style="margin-bottom:0;">
+                        {#new_success_anli}
+                        {@gte key=$idx value=2}
+                        <li class="articles_concont2_box">
+                            <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}/">{title}</a></div>
+                            <div class="articles_concont2_box_p2">
+                                {#menu}
+                                <a href="/success_case/info/{id}/">
+                                <div class="articles_concont2_box_sp1">{.}</div>
+                                </a>
+                                {/menu}
+                            </div>
+                        </li>
+                        
+                        {/gte}
+                        {/new_success_anli}
+                        {#successData}
+                        <li class="articles_concont2_box">
+                            <div class="articles_concont2_box_p1"><a href="/success_case/info/{id}">{title}</a></div>
+                            <div class="articles_concont2_box_p2">
+                                {#tags}
+                                <a href="/success_case/info/{id}">
+                                <div class="articles_concont2_box_sp1">{.}</div>
+                                </a>
+                                {/tags}
+                            </div>
+                        </li>
+                        {/successData}
+                        <li class="articles_concont2_box"  v-for="reply in cases_list"  track-by="$index">
+                            <div class="articles_concont2_box_p1"><a href="/success_case/info/{{ reply.id }}/">{{ reply.title }}</a></div>
+                            <div class="articles_concont2_box_p2">
+                                <div class="articles_concont2_box_sp1" v-for="(index,tag) in reply.tags"  v-if="index<2"><a style="color: #FF6688;" href="/success_case/info/{{ reply.id }}/">{{ tag }}</a></div>
+                            </div>
+                        </li>
+                        <a class="show_more" name="guonei" >显示更多</a>
+                </ul>
+            </div>
+        </div>
+         <p class="line"></p> 
+        <a class="buttonTJ" tj_action="click" tj_position="case-guonei" target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee""><img src="//img.haoyunbang.cn/m/img/guonei_succes_5.png"  alt="" class="line_img1"></a>
+        <p class="line"></p> 
+    {/eq}
+   
+    
+
+    {! 泡脚包 !}
+    <div class="block_list_div add_live_div add_live_div_btn" style="display: none;">
+        <div class="title"><p>好孕福利</p></div>
+        <div class="add_live_div_menu box">
+            <a href="https://m.tb.cn/h.3ptb4rY?sm=ed2f06" class="buttonTJ" tj_action="click" tj_position="topic_shopping" tj_name="m-商品">
+                <div class="add_live_div_top">
+                <div  class="add_live_div_top_fl">
+                    <img src="//img.haoyunbang.cn/m/img/ico_m_hy_pjb.png">
+                    {! <div class="add_live_div_top_num"><p>234人提问专家</p></div> !}
+                </div>
+                <div  class="add_live_div_top_fr">
+                    <h2 class="many_line line_two">女性备孕调理泡脚包：驱寒，暖身，备孕?</h2>
+                    <button class="btn_topic_vs">新品特价 39元</button>
+                </div> 
+                </div>      
+            </a>
+            
+        </div>
+    </div>
+    {! 试管成功视频日记 !}
+    <div class="block_list_div block_list_div_two" style="display: none;">
+        <div class="title"><p>试管成功视频日记</p></div>
+        <div class="case_vedio_block">
+            <ul class="box">
+                {#tubeDataWithVideo}
+                <li class="playVideo">
+                    <a href="/success_case/info/{id}" target="_blank">
+                        <div class="hp_video_list_li_top">
+                            <img src="{imgUrl}">
+                            <div class="new_hp_video_btn"></div>
+                        </div>
+                        <div class="hp_video_list_li_bottom">
+                            <p  class="fl many_line line_two">{title}</p>
+                        </div>
+                    </a>
+                </li>
+                {/tubeDataWithVideo}
+            </ul>
+            {! <a class='li_more' tags="{tags}" reload="{re_load_gl}" name="gonglue" style="display: {@eq key=topic.list.length value=5 type="number"} block {:else} none {/eq};">显示更多</a> !}
+        </div>
+    </div>
+    {! 优化 直播 专家答疑 !}
+    <div class="block_list_div add_live_div buttonTJ" style="display: none;" onclick="addGrounp(this,'gk')" tj_action="click" tj_position="watch_live" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m进群">
+        <div class="title"><p>专家答疑</p></div>
+        <div class="add_live_div_menu box">
+            <div class="add_live_div_top">
+                <div  class="add_live_div_top_fl">
+                    <img src="//img.haoyunbang.cn/cooperate_gw/images/ico_onlive_all_new.png?x-oss-process=image/resize,m_fill,w_120,h_90">
+                    <div class="add_live_div_top_num"><p>234人提问专家</p></div>
+                </div>
+                <div  class="add_live_div_top_fr">
+                    <h2 class="many_line line_two">备孕6个黄金法则，三甲医院专家教如何快速怀孕。?</h2>
+                    <p>高芹<i>主任医师</i></p>
+                    <span>山东大学附属生殖医院</span>
+                </div> 
+            </div>
+            <a class="add_live_div_bottom ">进群，免费看直播</a>
+        </div>
+    </div>
+    {! 好孕案例 !}
+    <!-- <div class="block_list_div" style="border-top: .4rem solid #f5f5f5;">
+        <div class="title"><p>好孕案例</p></div>
+        <ul class="hy_case_div box">
+            {#tubeDataNoVideo}
+            <li>
+                <a target="_blank" href="/success_case/info/{id}">
+                    <div class="hy_case_div_fl">
+                        <img src="{imgUrl}">
+                    </div>
+                    <div class="hy_case_div_fr">
+                        <p class="many_line line_two">{title}</p>
+                        <span class="ellipsis">{menu}</span>
+                    </div>
+                </a>
+            </li>
+            {/tubeDataNoVideo}
+        </ul>
+    </div> -->
+    {! 好孕帮咨询 !}
+    {!<div class="block_list_div cass_hyb_zx box">
+        <div class="cass_hyb_zx_top">
+            <img src="//img.haoyunbang.cn/m/img/ico_logo_down.png">
+            <div class="cass_hyb_zx_top_fl">
+                <p>好孕帮</p>
+                <span class="ellipsis">已帮助122836位用户好孕</span>
+            </div>
+        </div>
+        <ul>
+            <li class="fl box">试管成功率高于同行业26%，治疗周期缩短50%</li>
+            <li class="fl box">国内规模著名连锁生殖专科门诊，手术量排名靠前的宫腹腔镜手术中心</li>
+            <li class="fl box">汇集北医三院，朝阳医院，海军总医院等多家三甲医院生殖医疗资源</li>
+        </ul>
+        <div class="cass_hyb_zx_boottom">
+            <a class="fl buttonTJ" target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee" tj_action="click" tj_position="online_zixun" tj_name="m首页-咨询">咨询专家</a>
+            <a class="fr buttonTJ" href="tel:400-6999-016" tj_action="click" tj_url="click_phone" tj_position="m_index" tj_name="m首页-打电话">免费回电</a>
+        </div>
+    </div>!}
+
+    {! 广告位 !}
+    <!-- <div class="post_advert_img_mobil">
+        <a target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee">
+            {@eq key=flag value=2}
+                <img style="height:auto;" src="http://img.haoyunbang.cn/m/img/adm0827.png" alt="广告位">
+            {/eq}
+            {@eq key=flag value=1}
+            <a href="https://m.haoyunbang.cn/guoneishiguan">
+                <img style="height:auto;" src="/img/haoyunguangao123_2.png" alt="试管包成功">
+            </a>
+            {/eq}
+        </a> 
+    </div> -->
+    {! 面包屑 !}
+    <div class="breadcrumb breadcrumb4" ><a href="https://m.haoyunbang.cn/" target="_blank">首页</a><a href="https://m.haoyunbang.cn/cases/" target="_blank">好孕日记</a><a style="color:#FF6688">文章详情</a></div>
+    </div>
+<script>
+    $(function(){
+       
+        var mySwiper = new Swiper('.xiezuo_boxcn_cont1 .swiper-container', {
+            direction: 'horizontal',
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            speed: 300,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+        });
+    });
+
+    
+</script>
+{/body}
+
+{<script}
+    <script src="/js/topic.js"></script>
+{/script}

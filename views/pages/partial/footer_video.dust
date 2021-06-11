@@ -1,0 +1,18 @@
+{! footer !}
+<div class="footer_new">
+    <img src="//img.haoyunbang.cn/m/img/ico_logo_down.png" alt="">
+    <p class="intro">
+        好孕帮  1万名生殖领域专科医生
+        <span>明显降低诊疗费用，大大缩短备孕时间，快速好孕</span>
+    </p>
+    <ul>
+         <li><a href="https://m.haoyunbang.cn/" style="color: #f68;font-weight:600">首页</a></li>
+        <li><a href="https://m.haoyunbang.cn/ztzh/ask_doc/" style="color: #f68;font-weight:600">专家问答</a></li>
+        <li><a href="https://m.haoyunbang.cn/bk/" style="color: #f68;font-weight:600">百科</a></li>
+        <li><a href="/hospital/" style="color: #f68;font-weight:600">生殖机构 </a></li>
+      <li><a href="https://m.haoyunbang.cn/topic/" style="color: #f68;font-weight:600">论坛</a></li>
+    </ul>
+    <div class="footer_new2_btn">明锐思成版权所有© haoyunbang</div>
+    <a style="display: none;" class="download buttonTJ" target="_blank" href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee"  tj_action="click" tj_url="online_zixun"   tj_position="online_zixun" tj_name="m首页-咨询" >知名专家，一对一咨询</a>
+    <a id="btnApp" class="buttonTJ btnApp" tj_action="click" tj_position="app_download_open">打开APP</a>
+</div>

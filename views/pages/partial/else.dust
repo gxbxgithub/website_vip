@@ -1,0 +1,95 @@
+{! 姐妹微信群 !} 
+<div  style="display:none" class="wx_grounp box block_list_div" style="border-bottom: none">
+        <div class="title"><p style="font-size: .64rem;color: #333;font-weight: 600 !important;">加入姐妹备孕群</p></div>
+        <ul>
+            <li class="box buttonTJ"  onclick="(this,'sg')" tj_action="click" tj_position="join_watch" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m加入群">
+                <h2 class="many_line line_two">试管婴儿成功经验群</h2>
+                <span>29912位姐妹</span>
+                <p >加群</p>
+            </li>
+            <li class="box buttonTJ"  onclick="addGrounp(this,'lc')" tj_action="click" tj_position="join_watch" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m加入群">
+                <h2 class="many_line line_two">调理卵巢内分泌问题群</h2>
+                <span>39823位姐妹</span>
+                <p >加群</p>
+            </li>
+            <li class="box buttonTJ"  onclick="addGrounp(this,'dn')" tj_action="click" tj_position="join_watch" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m加入群">
+                <h2 class="many_line line_two">改善多囊每日打卡群</h2>
+                <span>31556位姐妹</span>
+                <p>加群</p>
+            </li>
+            <li class="box buttonTJ"  onclick="addGrounp(this,'by')" tj_action="click" tj_position="join_watch" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m加入群">
+                <h2 class="many_line line_two">适合受孕方法资料分享群</h2>
+                <span>45586位姐妹</span>
+                <p>加群</p>
+            </li>
+        </ul>
+    </div>
+    {! 优化 直播 专家答疑 !}
+    <div  style="display:none" class="block_list_div add_live_div buttonTJ " style="border-top: .4rem solid #fafafa;"  onclick="addGrounp(this,'gk')" tj_action="click" tj_position="watch_live" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m进群">
+            <div class="title"><p style="font-size: .64rem;color: #333;font-weight: 600 !important;">专家答疑</p></div>
+            <div class="add_live_div_menu box">
+                <div class="add_live_div_top">
+                    <div  class="add_live_div_top_fl">
+                        <img src="//img.haoyunbang.cn/cooperate_gw/images/ico_onlive_all_new.png?x-oss-process=image/resize,m_fill,w_120,h_90">
+                        <div class="add_live_div_top_num"><p>219人提问专家</p></div>
+                    </div>
+                    <div  class="add_live_div_top_fr">
+                        <h2 class="many_line line_two">备孕6个黄金法则，三甲医院专家教如何快速怀孕。</h2>
+                        <p>高芹<i>主任医师</i></p>
+                        <span>山东大学附属生殖医院</span>
+                    </div>
+                </div>
+                <div class="add_live_div_top">
+                    <div  class="add_live_div_top_fl">
+                        <img src="//img.haoyunbang.cn/cooperate_gw/images/ico_onlive_all_new_m_01.png?x-oss-process=image/resize,m_fill,w_120,h_90">
+                        <div class="add_live_div_top_num"><p>384人提问专家</p></div>
+                    </div>
+                    <div  class="add_live_div_top_fr">
+                        <h2 class="many_line line_two">中医调理 | 好"孕"气从备孕养起</h2>
+                        <p>叶秀英<i>主任医师</i></p>
+                        <span>重庆市江北区中医院</span>
+                    </div>
+                </div>
+                <div class="add_live_div_top">
+                    <div  class="add_live_div_top_fl">
+                        <img src="//img.haoyunbang.cn/cooperate_gw/images/ico_onlive_all_new_m_02.jpeg?x-oss-process=image/resize,m_fill,w_120,h_90">
+                        <div class="add_live_div_top_num"><p>427人提问专家</p></div>
+                    </div>
+                    <div  class="add_live_div_top_fr">
+                        <h2 class="many_line line_two">三甲医院专家揭秘如何提高试管婴儿成功率？</h2>
+                        <p>明蕾<i>主任医师</i></p>
+                        <span>湖北省人民医院</span>
+                    </div>
+                </div>
+                <a class="add_live_div_bottom ">进群，免费看直播</a>
+            </div>
+        </div>
+
+        <div class="swiper-container" id="best_post_auth" style="display:none;" >
+                <div class="swiper-wrapper">
+                    <div class="buttonTJ box swiper-slide" onclick="addGrounp(this,'gk')" tj_action="click" tj_position="article_top_add" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m进群">
+                        <div class="topic_add_fl" style="background: url('//img.haoyunbang.cn/m/img/ico_detail_add_grounp_bj.png') no-repeat; background-size: 100%; background-position: 0;">
+                            <p class="one ellipsis box">好"孕"气从备孕养起，从中医角度备孕期间如何调理？多囊卵巢、卵巢早衰、试管婴儿、盆腔炎等如何通过中医治疗？</p>
+                            <p class="ellipsis two box">2445</p>
+                        </div>
+                    </div>
+                    <div class="buttonTJ box swiper-slide" onclick="addGrounp(this,'gk')" tj_action="click" tj_position="article_top_add" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m进群">
+                        <div class="topic_add_fl box" style="background: url('//img.haoyunbang.cn/m/img/ico_detail_add_grounp_bj.png') no-repeat; background-size: 100%; background-position: 0;">
+                            <p class="one ellipsis box">生殖医学30年专家，讲解试管婴儿怎么做？</p>
+                            <p class="ellipsis two box">8971</p>
+                        </div>
+                    </div>
+                    <div class="buttonTJ box swiper-slide" onclick="addGrounp(this,'sg')" tj_action="click" tj_position="article_top_add" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m进群">
+                        <div class="topic_add_fl box" style="background: url('//img.haoyunbang.cn/m/img/ico_detail_add_grounp_bj.png') no-repeat; background-size: 100%; background-position: 0;">
+                            <p class="one ellipsis box">试管成功率到底有多高? 过来人讲经验</p>
+                            <p class="ellipsis two box">4875</p>
+                        </div>
+                    </div>
+                    <div class="buttonTJ box swiper-slide" onclick="addGrounp(this,'by')" tj_action="click" tj_position="article_top_add" tj_objectType={tj_param.objectType} tj_objectId={tj_param.objectId} tj_name="m进群">
+                        <div class="topic_add_fl box" style="background: url('//img.haoyunbang.cn/m/img/ico_detail_add_grounp_bj.png') no-repeat; background-size: 100%; background-position: 0;">
+                            <p class="one ellipsis box">分享快速怀孕方法，吃什么做什么</p>
+                            <p class="ellipsis two box">6984</p>
+                        </div>
+                    </div>
+                </div>
+            </div>

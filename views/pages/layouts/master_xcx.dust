@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>{+title/}</title>
+	<meta name="description" content="{+description/}"/>
+	<meta name="keywords" content="{+keywords/}" />
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="content-language" content="zh-CN">
+    
+    {?mobile_shipei}{@ne key=mobile_shipei value=""}
+    <meta name="applicable-device" content="mobile">
+    <link rel="canonical" href="{mobile_shipei}" >
+    {/ne}
+    {/mobile_shipei}
+    
+   
+
+    <link rel="stylesheet" href="//img.haoyunbang.cn/m/css/index.css?v=0.1.0">
+	{+link/}
+
+</head>
+<body>
+    <div class="main">
+        {>"pages/partial/header"/}
+		{+body/}
+		{>"pages/partial/footer_xcx"/}
+	</div>
+
+	<script src="//img.haoyunbang.cn/cooperate_gw/js/rem.js"></script>
+	<script src="//img.haoyunbang.cn/cooperate_gw/js/jquery.js"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/baidu.js?v=0.0.1"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/online_zixun.js"></script>
+	{+script/}
+	
+	<script>
+            function connect_zhichi(){
+            }
+
+		   function init() {
+            var current_user ="";
+            var arr = document.cookie.split("; ");
+            for( var i = 0; i < arr.length; i++){
+                var item = arr[i].split("=");
+                if(item[0] == "hyb_luntan2"){
+                  current_user = item[1];
+                  break;
+                }
+            }
+
+
+            current_user = decodeURIComponent(current_user);
+            var auth = current_user.split('$$$$');
+            if(auth && auth.length == 3){
+			  $('.buttonTJ').attr('tj_userId',auth[2]);
+			}
+        };
+
+
+        if(window.addEventListener){
+            window.addEventListener("load",init,false);
+        }else{
+            window.attachEvent("onload",init);
+        }
+
+        ;String.prototype.trim = function(){
+            return this.replace(/(^\s+)|(\s+$)/g, "");
+        }
+        ;function handle(ev){
+            var $this = $(ev);
+            var val = $this.val().trim(),
+                length = val.length;
+            $this.siblings('p').text('最多可输入' + (1000 - length) + '个字');
+        }
+	</script>
+</body>
+</html>

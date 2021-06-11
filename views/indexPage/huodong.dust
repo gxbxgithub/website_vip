@@ -1,0 +1,91 @@
+{>"pages/layouts/master" /} 
+{<title}怎样才能怀孕_不孕不育检查项目-诊断项目-好孕帮{/title}
+{<keywords}怎样才能怀孕，不孕不育检查项目{/keywords}
+{<description}怎样才能怀孕?【针对不容易怀孕的人】 备孕多年一直不孕。首先, 1、检查一下卵巢排卵情况好不好  2、男方精子质量如何  3、子宫内膜情况如何 4、激素水平如何。好孕帮针对不孕用户进行一对一的病情分析,并提供整体医疗服务与解决方案。{/description}
+
+{<body}
+
+<!-- 最精彩活动 -->
+<div class="best_activities act_item box">
+    <h4>最新精彩活动</h4>
+    <div class="activities_list">
+        <ul class="box">
+            {#top_tuijian}
+                <li>	
+                    <a href="{url}">
+                        <img src="{images}" alt="" />
+                        <p>{title}</p>
+                    </a>
+                </li>{~n}
+            {/top_tuijian}
+            {#top}
+                <li>
+                    <a href="{shortLinkUrl}">
+                        <img src="{ad_materiel[0].path}" alt="" />
+                        <p>{advert_remark}</p>
+                    </a>
+                </li>{~n}
+            {/top}
+            {#recommendarea}
+                <li style="display: {@eq key=$idx value=0 type="number"} block {:else} none {/eq};">
+                    <a href="{shortLinkUrl}">
+                        <img src="{ad_materiel[0].path}" alt="" />
+                        <p>{advert_remark}</p>
+                    </a>
+                </li>{~n}
+            {/recommendarea}
+        </ul>					
+    </div>
+    <a class="show_more show_more_activities" name="activities_list">显示更多</a>
+</div>
+<!-- 好孕福利社 -->
+<div class="welfare_service act_item box" id="activity">
+    <h4>好孕福利社</h4>
+    <div class="welfare_service_list">
+        <ul>
+            {#advertevents.data}
+            {@lt key=$idx value=4 type="number"}
+            <li>
+                <a href="{skipUrl}">
+                    <img src="{imageUrl}" alt="" />
+                    <p class="many_line line_two">{title}</p>
+                </a>
+            </li>{~n}
+            {/lt}
+            {/advertevents.data}
+        </ul>
+    </div>
+    <div style="clear:both"></div>
+    <!-- <a class="show_more service_more">显示更多</a> -->
+</div>
+<!-- 医生直播 -->
+<div class="doctor_live act_item box" id="online">
+    <h4>医生直播</h4>
+    <div class="live_list">
+        <ul>
+            {#chatroom.data}
+            <li style="display: {@lt key=$idx value=4 type="number"} block {:else} none {/lt};">
+                <a href="{url}">
+                <div class="left_img">
+                    <div class="people_num">{@math key=room_user_num method="add" operand=min_user_count/}人参与</div>
+                    <img src="//img.haoyunbang.cn/m/img/icon_open.png" alt="" class="open trans"/>
+                    <img src="{show_img}" alt="" />
+                </div>
+                <div class="right_menu">
+                    <h5>{room_name}</h5>
+                    <div class="doctor_name">
+                        <p>{doctors[0].doct_name}</p>
+                        <p>{doctors[0].doct_pro}</p>
+                    </div>
+                </div>
+                </a>
+            </li>{~n}
+            {/chatroom.data}
+
+        </ul>
+    </div>	
+    <div style="clear:both"></div>
+    <a class="show_more" name="live_list" href="/huodong/onlineList">显示更多</a>
+</div>
+
+{/body}

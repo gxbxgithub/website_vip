@@ -1,0 +1,557 @@
+{>"pages/layouts/master" /}
+{<title}【好孕帮】_不孕不育_试管婴儿_一站式医疗服务平台{/title}
+    {<description}好孕帮_为4000万不孕不育女性提供专业、严谨、安心、可靠的孕育解决方案，包括不孕不育检查、手术、海内外试管婴儿咨询、备孕等生殖科医疗服务，知名专家团队及全国5000+三甲妇产科医生为您量身定制适合助孕治疗方案，帮您快速怀孕，生出健康宝宝！{/description}
+    {<keywords}不孕不育,试管婴儿,备孕{/keywords} {<body} <style>
+    .hyrj_ul{width:100%;overflow:hidden;}
+    .hyrj_ul li{width:100%;overflow:hidden;font-size: .56rem;width: 100%;line-height: .92rem; display:
+    block;padding-top:.4rem;position:relative;}
+    .hyrj_ul li a{color: #333; font-size: .56rem;}
+    </style>
+    <div class="home_index" style="background-color: #fff;">
+        {! 轮播图 !}
+        <div class="banner_index swiper-container" id="banner_index_new">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a target="_blank" href="https://www.wjx.top/jq/104512798.aspx">
+                        <img src="//img.haoyunbang.cn/m/img/m_banner21.jpg">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">
+                    <a onclick="connect_zhichi()">
+                        <img src="//img.haoyunbang.cn/m/img/m-tanland.jpg">
+                    </a>
+                </div> -->
+                <div class="swiper-slide">
+                    <a target="_blank" href="https://m.haoyunbang.cn/cases/">
+                        <img src="//img.haoyunbang.cn/m/img/1.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a target="_blank" href="https://www.haoyunbang.cn/mdt/">
+                        <img src="//img.haoyunbang.cn/m/img/5-1.jpg">
+                    </a>
+                </div>
+            </div>
+            {! 如果需要分页器 !}
+            <div class="swiper-pagination"></div>
+        </div>
+        {! 导航框 !}
+        <div class="index_nav box">
+            <ul>
+                <li>
+                    <a href="https://m.haoyunbang.cn/ztzh/ask_doc/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_zjwd.png" alt="专家问答">
+                        <p>专家问答</p>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="https://m.haoyunbang.cn/huasheng/">
+                        <img src="//img.haoyunbang.cn/m/img/mobil_index_yzmz.png" alt="好孕医院">
+                        <p>好孕医院</p>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="/hospital/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_szjg.png" alt="生殖机构">
+                        <p>生殖机构</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.haoyunbang.cn/topic/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_hysq.png" alt="好孕社区">
+                        <p>好孕社区</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.haoyunbang.cn/bk/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_bybk.png" alt="备孕百科">
+                        <p>备孕百科</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.haoyunbang.cn/cases/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_hyrj.png" alt="好孕日记">
+                        <p>好孕日记</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/chatroom/lookback_new/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_myzb.png" alt="名医直播">
+                        <p>名医直播</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ztzh/guoneishiguan/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_sgbcg.png" alt="试管包成功">
+                        <p>试管包成功</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/haiwaishiguan/">
+                        <img src="//img.haoyunbang.cn/m/img/icon_index_hwsg.png" alt="海外试管">
+                        <p>海外试管</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="img_box1">
+            <a href="https://m.haoyunbang.cn/ztzh/peitaizhuanjia/"><img src="//img.haoyunbang.cn/m/img/icon_index_sgbwbt.png" alt="试管百万补贴"
+                    class="img_box_1"></a>
+            <a href="https://m.haoyunbang.cn/haiwaishiguan/thailand/"><img src="//img.haoyunbang.cn/m/img/icon_index_tgsg.png"
+                    alt="泰国试管" class="img_box_1"></a>
+        </div>
+        {! 轮播图 !}
+        <div class="swiper-container" id="banner_index_new1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="/zt_shuluanguan/"><img src="//img.haoyunbang.cn/m/img/tggg_3.png" alt="" class="img_box1_img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/zt_zigong/"><img src="//img.haoyunbang.cn/m/img/zigong_index1.png" alt=""
+                            class="img_box1_img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/zt_duonangluanchao/"><img src="//img.haoyunbang.cn/m/img/duonangzhonghe_50.png" alt=""
+                            class="img_box1_img"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/zt_luanchaozonghe/"><img src="//img.haoyunbang.cn/m/img/index1_bo1.png" alt=""
+                            class="img_box1_img"></a>
+                </div>
+            </div>
+            {! 如果需要分页器 !}
+            <div class="swiper-pagination fenye_1"></div>
+        </div>
+        {! 好孕日记 !}
+        {?success_article_list}
+        <div class="index_block today_hot_spots box ldse">
+            <h3>好孕日记<a class="give_doctor_link" target="_blank" href="https://m.haoyunbang.cn/cases/">更多></a></h3>
+            <ul class="today_hot_spots_topimg">
+                {#success_article_list}
+                {@lte key=$idx value=1 type="number"}
+                <li>
+                    <div class="spots_topimg"><a href="/success_case/info/{id}/" target="_blank">
+                    {@eq key=$idx value=0 type="number"}
+                    <img alt="{title}" src="//img.haoyunbang.cn/m/img/m_index_case_01.png">
+                    {:else}
+                    <img alt="{title}" src="//img.haoyunbang.cn/m/img/m_index_case_02.png">
+                    {/eq}
+                    </a></div>
+                    <p class="many_line line_two"><a href="/success_case/info/{id}/" target="_blank">{title}</a></p>
+                </li>
+
+                {/lte}
+                {/success_article_list}
+            </ul>
+            <ul class="today_hot_spots_noimg">
+                {! 修改的成功案例 !}
+                {#success_article_list}
+                {@gt key=$idx value=1 type="number"}
+                    {@lt key=$idx value=5 type="number"}
+                    <li>
+                        <div class="fl_info">
+                            <a href="/success_case/info/{id}/" target="_blank"><p class="ellipsis" >{title}</p></a>
+                        </div>
+                    </li>
+                    {/lt}
+                {/gt}
+                {/success_article_list}
+            </ul>
+        </div>
+        {/success_article_list}
+         
+        {! 专家问答 !}
+        <div class="index_block box index_doctor_wenda ask_doc">
+            <h3>专家问答<a class="give_doctor_link" target="_blank" href="https://m.haoyunbang.cn/ztzh/ask_doc/">更多></a></h3>
+            <div class="wenda_advert_div">
+                <a href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee"><img src="//img.haoyunbang.cn/m/img/icon_index_jszx.png" alt="极速资讯"></a>
+                <a href="https://www.sobot.com/chat/h5/index.html?sysNum=c3d158c27d484f8e8fc12efdbaf045ee"><img src="//img.haoyunbang.cn/m/img/icon_index_bgjd.png" alt="报告解读"></a>
+            </div>
+            <div class="wenda_list">
+                {#doctorWenda.data}
+                <a class="wenda_list_item" href="https://m.haoyunbang.cn/topic/info/{id}">
+                    <div class="title ellipsis">{title}</div>
+                    {?topicReplys}
+                    <div class="answer">
+                        <p class="cont ellipsis">{topicReplys[0].content}</p>
+                        {?topicReplys[0].author}
+                        <div class="info">
+                            <img src="{topicReplys[0].author.avatar}">
+                            <div><span>{topicReplys[0].author.name}</span><span>{topicReplys[0].author.doctPro}</span><span>{topicReplys[0].author.hospitalName}</span></div>
+                        </div>
+                        {/topicReplys[0].author}
+                    </div>
+                    {/topicReplys}
+                    <div class="number"><span>{?topic.commentCount}{topic.commentCount}{:else}0{/topic.commentCount}位医生</span>已回答</div>
+                </a>
+                {/doctorWenda.data}
+            </div>
+        </div>
+        
+        {! 特邀专家 !}
+        <div class="index_invited_export">
+            <div class="invited_export_ul hide_sbar box">
+                {#exportData}
+                    <div class="swiper-slide box"> 
+                        <div class="top">
+                            <div class="top_img">
+                                <a href="/doctor/info/{id}/"><img src="{avatar}?x-oss-process=style/sqheader" alt="关菁"></a>
+                            </div>
+                            <div class="top_info">
+                                <p class="top_tile"><a href="/doctor/info/{id}/">{name}<i>{pro}</i></a></p>
+                                <span class="ellipsis">{hospital}</span>
+                            </div>
+                        </div>
+                        {?introduction}
+                        <p class="many_line line_two goods"><span>特色</span>{introduction}</p>
+                        {/introduction}
+                        {!<p class="many_line line_two goods"><a href="/doctor/info/{id}/"  style="color: #f68; font-size: 14px;">{introduction}</a></p>!}
+                            
+                    </div>
+                {/exportData}
+            </div>
+        </div>
+        {! 好孕社区 !}
+        <div class="index_block goodluck_community box" style="border-top: none">
+            <h3>好孕社区</h3>
+            <div class="goodluck_community_div tabs">
+                <ul class="tabs-list">
+                    <li onclick="give_more_link(this, 'quanzi_beiyunjiaoliu')">备孕交流</li>
+                    <li onclick="give_more_link(this, 'quanzi_nanyunzhiliao')">难孕治疗</li>
+                    <li onclick="give_more_link(this, 'quanzi_shiguanyinger')">试管婴儿</li>
+                </ul>
+                <div class="tabs_list_div tabs-container">
+                    <ul class="tab-content" style="display: block;">
+                        {#beiyun_topic_list}
+                        <li>
+                            <a href="/topic/info/{id}" target="_blank">
+                                <p class="many_line line_two">{title}</p>
+                                <div class="user_info">
+                                    <img class="fl" src="{?topic.authorAvatar}{topic.authorAvatar}{:else}//img.haoyunbang.cn/user/default/header.png{/topic.authorAvatar}?x-oss-process=style/sqheader" onerror="javascript:this.src='//img.haoyunbang.cn/user/default/header.png'" alt="用户头像">
+                                    <span class="fl">{topic.authorName}</span>
+                                    <i class="fr">{topic.visitCount}阅读</i>
+                                </div>
+                            </a>
+                        </li>
+                        {/beiyun_topic_list}
+                    </ul>
+                    <ul class="tab-content" style="display: none;">
+                        {#nanyun_topic_list}
+                        <li>
+                            <a href="/topic/info/{id}" target="_blank">
+                                <p class="many_line line_two">{title}</p>
+                                <div class="user_info">
+                                    <img class="fl" src="{?topic.authorAvatar}{topic.authorAvatar}{:else}//img.haoyunbang.cn/user/default/header.png{/topic.authorAvatar}?x-oss-process=style/sqheader" onerror="javascript:this.src='//img.haoyunbang.cn/user/default/header.png'" alt="用户头像">
+                                    <span class="fl">{topic.authorName}</span>
+                                    <i class="fr">{topic.visitCount}阅读</i>
+                                </div>
+                            </a>
+                        </li>
+                        {/nanyun_topic_list}
+                    </ul>
+                    <ul class="tab-content" style="display: none;">
+                        {#shiguan_topic_list}
+                        <li>
+                            <a href="/topic/info/{id}" target="_blank">
+                                <p class="many_line line_two">{title}</p>
+                                <div class="user_info">
+                                    <img class="fl" src="{?topic.authorAvatar}{topic.authorAvatar}{:else}//img.haoyunbang.cn/user/default/header.png{/topic.authorAvatar}?x-oss-process=style/sqheader" onerror="javascript:this.src='//img.haoyunbang.cn/user/default/header.png'" alt="用户头像">
+                                    <span class="fl">{topic.authorName}</span>
+                                    <i class="fr">{topic.visitCount}阅读</i>
+                                </div>
+                            </a>
+                        </li>
+                        {/shiguan_topic_list}
+                    </ul>
+                </div>
+                <div class="wen_doctor">
+                    <a href="/topic/quanzi_beiyunjiaoliu"><img src="//img.haoyunbang.cn/m/img/icon_index_points.png">进入备孕交流圈</a>
+                </div>
+            </div>
+        </div>
+        {! 三甲名医全面指导备孕 !}
+        <div class="index_doctor_beiyun_guide">
+            <a href="https://m.haoyunbang.cn/ztzh/shunianzhuanhua/"><img src="//img.haoyunbang.cn/m/img/ico_index_banner_guide.png" alt="三甲名医全面指导备孕"></a>
+        </div>
+        {! 名医科普视频 !}
+        <div class="index_block famousdoctor_video box" style="display: none;">
+            <h3>名医科普视频</h3>
+            <div class="famousdoctor_video_div tabs">
+                <ul class="tabs-list">
+                    <li>子宫问题</li>
+                    <li>输卵管问题</li>
+                    <li>卵巢及其他问题</li>
+                </ul>
+                <div class="tabs_list_div tabs-container">
+                    <ul class="tab-content" style="display: block;">
+                        {#zigongVedio}
+                        <li>
+                            <a>
+                                <div class="top">
+                                    <div class="img">
+                                        <img src="{images[0]}" alt="头图">
+                                    </div>
+                                    <div class="play_btn trans"></div>
+                                </div>
+                                <p class="ellipsis">{title}</p>
+                                <div class="doctor_info">
+                                    <img class="fl" src="{baiKe.doctor.avatar}?x-oss-process=style/doctor_head_300x360" alt="用户头像">
+                                    <span class="fl">{baiKe.doctor.name}  {baiKe.doctor.title}</span>
+                                </div>
+                            </a>
+                        </li>
+                        {/zigongVedio}
+                    </ul>
+                    <ul class="tab-content" style="display: none;">
+                        {#slgVedio}
+                        <li>
+                            <a>
+                                <div class="top">
+                                    <div class="img">
+                                        <img src="{images[0]}" alt="头图">
+                                    </div>
+                                    <div class="play_btn trans"></div>
+                                </div>
+                                <p class="ellipsis">{title}</p>
+                                <div class="doctor_info">
+                                    <img class="fl" src="{baiKe.doctor.avatar}?x-oss-process=style/doctor_head_300x360" alt="用户头像">
+                                    <span class="fl">{baiKe.doctor.name}  {baiKe.doctor.title}</span>
+                                </div>
+                            </a>
+                        </li>
+                        {/slgVedio}
+                    </ul> 
+                    <ul class="tab-content" style="display: none;">
+                        {#lcVedio}
+                        <li>
+                            <a>
+                                <div class="top">
+                                    <div class="img">
+                                        <img src="{images[0]}" alt="头图">
+                                    </div>
+                                    <div class="play_btn trans"></div>
+                                </div>
+                                <p class="ellipsis">{title}</p>
+                                <div class="doctor_info">
+                                    <img class="fl" src="{baiKe.doctor.avatar}?x-oss-process=style/doctor_head_300x360" alt="用户头像">
+                                    <span class="fl">{baiKe.doctor.name}  {baiKe.doctor.title}</span>
+                                </div>
+                            </a>
+                        </li>
+                        {/lcVedio}
+                    </ul>                 
+                </div> 
+            </div>
+        </div>
+        {! 好孕百科 !}
+        <div class="index_block hy_subject box">
+            <h3>好孕百科</h3>
+            <div class="hy_subject_div">
+                {#tag_list}
+                 {@ne key=name value="孕期"}
+                <div class="subject_div">
+                    <div class="subject_div_title">
+                        <img class='fl' src="{img}" alt="{name}">
+                        <p class='fl'>{name}</p>
+                        <a class='fr' href="https://m.haoyunbang.cn/bk/">更多></a>
+                    </div>
+                    <ul class="subject_ul_tags">
+                        {@eq key=name value="备孕"}
+                          <li><a href="/bk/5acf3c64652ae020e872fd1a/" target="_blank" class="ellipsis">孕前检查</a></li>
+                          <li><a href="/bk/5b519837c51b8c23eede1c66/" target="_blank" class="ellipsis">二胎</a></li>
+                          <li><a href="/bk/5c0e375a5ac73e5ed241b1d1/" target="_blank" class="ellipsis">雌激素</a></li>
+                          <li><a href="/bk/5bbc672b194927d253d7c29b/" target="_blank" class="ellipsis">排卵</a></li>
+                          <li><a href="/bk/5acf42d44e62382f047d18a3/" target="_blank" class="ellipsis">子宫前位</a></li>
+                          <li><a href="/bk/5acf42de4e62382f047d1978/" target="_blank" class="ellipsis">子宫肌瘤</a></li>
+                        {/eq}
+                        {@eq key=name value="不孕不育"}
+                          <li><a href="/bk/5acf3aa5b0ee42082c2545f1/" target="_blank" class="ellipsis">多囊卵巢</a></li>
+                          <li><a href="/bk/5acf3aa5b0ee42082c2545f5/" target="_blank" class="ellipsis">子宫内膜异位</a></li>
+                          <li><a href="/bk/5acf3aa5b0ee42082c2545f6/" target="_blank" class="ellipsis">宫腔粘连</a></li>
+                          <li><a href="/bk/5acf3aa5b0ee42082c2545fc/" target="_blank" class="ellipsis">输卵管堵塞</a></li>
+                          <li><a href="/bk/5acf3aa5b0ee42082c254605/" target="_blank" class="ellipsis">胎停</a></li>
+                          <li><a href="/bk/5acf4165896a6b4290c23a8a/" target="_blank" class="ellipsis">习惯性流产</a></li>
+                          
+                        {/eq}
+                        {@eq key=name value="辅助生殖"}
+                          <li><a href="/bk/5acf42a34e62382f047d1500/" target="_blank" class="ellipsis">试管婴儿费用</a></li>
+                          <li><a href="/bk/5bbc672b194927d253d7c2ac/" target="_blank" class="ellipsis">试管婴儿成功率</a></li>
+                          <li><a href="/bk/5b18a8c72344fb0888be01ee/" target="_blank" class="ellipsis">试管婴儿过程</a></li>
+                          <li><a href="/bk/5bbc672b194927d253d7c2a9/" target="_blank" class="ellipsis">什么叫试管婴儿</a></li>
+                          <li><a href="/bk/5b18a8cd2344fb0888be0254/" target="_blank" class="ellipsis">试管婴儿周期</a></li>
+                          <li><a href="/bk/5acf42a54e62382f047d1555/" target="_blank" class="ellipsis">试管婴儿能选</a></li>
+                         
+                        {/eq}
+                    </ul>
+                    <div class="subject_ul_list_div" style="display: none;">
+                        <ul class="subject_ul_list">
+                            {#baike}
+                            {@lt key=$idx value=2 type="number"}
+                            <li><a href="/bk/{id}/" class="ellipsis">{title}</a></li>
+                            {/lt}
+                            {/baike}
+                        </ul>
+                        <ul class="subject_ul_list">
+                            {#baike}
+                            {@gt key=$idx value=3 type="number"}
+                            <li><a href="/bk/{id}/" class="ellipsis">{title}</a></li>
+                            {/gt}
+                            {/baike}
+                        </ul>
+                    </div>
+                </div>
+                {/ne}
+                {/tag_list} 
+                <div class="subject_div_doctor">
+                   <div class="subject_div_title">
+                       <img class='fl' src="http://img.haoyunbang.cn/webup/goods/1545620739090.png" alt="医院">
+                       <p class='fl'>医院排行榜</p>
+                       <a class='fr' href="/hospital/">更多></a>
+                   </div>
+                   <ul class="subject_ul_tags">
+                       {#hos_gudign_arr}
+                       <li><a href="/hospital/info/{id}/" class="ellipsis" target="_blank">{name}</a></li>
+                       {/hos_gudign_arr}
+                   </ul>
+                   <!-- 随机获取的医院 -->
+                   <div class="subject_ul_list_div1" style="display: none;">
+                        <ul class="subject_ul_list">
+                            {#hos_one}
+                                <li><a href="/hospital/info/{id}/" class="ellipsis" target="_blank">{name}</a></li>
+                            {/hos_one}
+                        </ul>
+                        <ul class="subject_ul_list">
+                            {#hos_two}
+                                <li><a href="/hospital/info/{id}/" class="ellipsis">{name}</a></li>
+                            {/hos_two}
+                        </ul>
+                    </div>
+               </div>
+
+
+               <div class="subject_div_doctor1">
+                <div class="subject_div_title">
+                    <img class='fl' src="http://img.haoyunbang.cn/webup/goods/1545620739090.png" alt="医院">
+                    <p class='fl'>权威生殖专家</p>
+                    <a class='fr' href="https://m.haoyunbang.cn/doctor">更多></a>
+                </div>
+                <ul class="subject_ul_tags">
+                    {#doc_arr_guding}
+                        <li><a href="/doctor/info/{id}/" class="ellipsis" target="_blank">{name}</a></li>
+                    {/doc_arr_guding}
+                </ul>
+                <div class="subject_ul_list_div2" style="display: none">
+                
+              
+                        <ul class="subject_ul_list">
+                            {#one_arr}
+                                <li><a href="/doctor/info/{id}/" class="ellipsis">{name}</a></li>
+                            {/one_arr}
+                        </ul>
+                        <ul class="subject_ul_list">
+                            {#two_arr}
+                                <li><a href="/doctor/info/{id}/" class="ellipsis">{name}</a></li>
+                            {/two_arr}
+                        </ul>
+                        <ul class="subject_ul_list">
+                            {#three_arr}
+                                <li><a href="/doctor/info/{id}/" class="ellipsis">{name}</a></li>
+                            {/three_arr}
+                        </ul>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        {! 每日推荐 !}
+        {?enterArticle}
+        <div class="index_block hy_subject box">
+            <h3>每日推荐 <a class='fr' href="https://www.haoyunbang.cn/haoyunbaike/">更多></a></h3>
+            
+            <div class="hyri_div box">    
+                <ul class="hyrj_ul">
+                    {#guangao_baike}
+                    {@lt key=$idx value=6 type="number"}
+                    <li class="box"><a href="/haoyunbaike/{number}.html" class="ellipsis">{title}</a></li>
+                    {/lt}
+                    {/guangao_baike}
+                </ul>
+            </div>
+        </div>
+        {/enterArticle}
+
+        {! 每日推荐 - 精选内容 !}
+        {!<div class="index_block box index_recommend_of_day">
+            <div class="tabs">
+                <ul class="tabs-list">
+                    <li>每日推荐</li>
+                    <li>精选内容</li>
+                    <a class='fr' href="https://www.haoyunbang.cn/haoyunbaike/">更多></a>
+                </ul>
+                <div class="tabs-container">
+                    <ul class="tab-content" style="display: block;">
+                        {#guangao_baike}
+                        {@lt key=$idx value=6 type="number"}
+                        <li class="box"><a href="/haoyunbaike/{number}.html" class="ellipsis">{title}</a></li>
+                        {/lt}
+                        {/guangao_baike}
+                    </ul>
+                    <ul class="tab-content">
+                    </ul>
+                </div>
+            </div>
+        </div>!}
+    </div>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/jquery.js"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/vue.js"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/layer-pc/layer.js"></script>
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/swiper-3.4.2.min.js"></script>
+    {! 切换tab !}
+    <script src="//img.haoyunbang.cn/cooperate_gw/js/responsive.tabs.js"></script>
+    <script src="//img.haoyunbang.cn/m/js/new_index.js?v=0.0.1"></script>
+    <!-- <script src="/js/new_index.js"></script> -->
+
+
+    <script>
+
+        /* 百度统计 */
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?61904fe68bbd833389825b6b1ccd183c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+
+
+            /* var hm_pc = document.createElement("script");
+            hm_pc.src = "https://hm.baidu.com/hm.js?182700e1a3e4e3d11669515114b4d4f4";
+            var s_pc = document.getElementsByTagName("script")[0];
+            s_pc.parentNode.insertBefore(hm_pc, s_pc); */
+
+
+            var hm_m = document.createElement("script");
+            hm_m.src = "https://hm.baidu.com/hm.js?8cd4f7ec2c4b1ebb463936134f12337e";
+            var s_m = document.getElementsByTagName("script")[0];
+            s_m.parentNode.insertBefore(hm_m, s_m);
+
+
+            var hm_p = document.createElement("script");
+            hm_p.src = "https://hm.baidu.com/hm.js?57193ebceb988485b91f68bd5e816c8f";
+            var s_p = document.getElementsByTagName("script")[0];
+            s_p.parentNode.insertBefore(hm_p, s_p);
+
+
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s_bp = document.getElementsByTagName("script")[0];
+            s_bp.parentNode.insertBefore(bp, s_bp);
+        })();
+
+    </script>
+   
+{/body}
