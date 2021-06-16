@@ -2,9 +2,9 @@
 const express = require('express');
 const router = express.Router();
 
-const homeController = require('../controllers/homeController');
+const vipController = require('../controllers/vipController');
 
-// router.get('/', );
+router.get('/', vipController.index);
 
 module.exports = router;
  

@@ -6,8 +6,10 @@ const confDir = path.resolve(__dirname);
 const appDir = path.resolve(confDir, '../../');// 项目根目录
 const localSettingsPath = path.join(confDir, "local_settings.json");// 本地配置文件的路径
 
-exports.remoteUrl = "http://39.107.29.30:5999"
-exports.appName = "web_api_dev"
+exports.mongodb = {
+    vip: "mongodb://admin:gxb_admin@47.104.82.94:27017/vip"
+}
+exports.appName = "website_2021"
 exports.appDir = appDir;// 项目的根目录
 exports.port = 3200;
 exports.serverId = process.pid;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>解析-vip视频在线解析</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="header_div">
+            <div class="layout">
+                <a class="logo" href="/">解析-vip视频在线解析</a>
+                <p class="warning">接口已更新，本站会在每天清晨检测和更新vip接口</p>
+                <ul>
+                    <li><a href="">天猫优惠券</a></li>
+                    <li><a href="">资源下载</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="body_div layout">
+            <div class="search_div">
+                <select onchange="jkChanged(this)">
+                    <option value="https://jx.m3u8.tv/jiexi/?url=">默认解析接口</option>
+                    <option value="https://17kyun.com/api.php?url=">接口1</option>	
+                    <option value="https://www.8090g.cn/jiexi/?url=">接口2</option>
+                    <option value="https://www.pangujiexi.cc/jiexi.php?url=">接口3</option>
+                    <option value="https://api.jiexi.la/?url=">接口4</option>
+                    <option value="https://www.h8jx.com/jiexi.php?url=">接口5</option>
+                    <option value="https://jx.618g.com/?url=">接口6</option>
+                    <option value="https://okjx.cc/?url=">接口7</option>
+                </select>
+                <input id="input" type="text" placeholder="请输入视频播放地址">
+                <div class="btns">
+                    <button onclick="play()">立即播放</button>
+                    <button>在手机观看</button>
+                </div>
+            </div>
+            <div class="iframe_div" id="iframe_div">
+                <p class="success sm">选择接口，填写视频地址，点击“立即播放”按钮</p>
+                <p class="success wn">接口源于互联网，播放内容与本站无关，仅供学习交流</p>
+            </div>
+        </div>
+
+        <div class="footer_div">
+            <ul class="link_list layout">
+                <li>
+                    <a href="http://v.qq.com/" target="_blank"><img src="/imgs/ico_link_tx.png"></a>
+                    <p>腾讯视频</p>
+                </li>
+                <li>
+                    <a href="https://www.iqiyi.com/" target="_blank"><img src="/imgs/ico_link_aqy.png"></a>
+                    <p>爱奇艺视频</p>
+                </li>
+                <li>
+                    <a href="https://www.youku.com/" target="_blank"><img src="/imgs/ico_link_yk.png"></a>
+                    <p>优酷视频</p>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/" target="_blank"><img src="/imgs/ico_link_bl.png"></a>
+                    <p>bilibili</p>
+                </li>
+                <li>
+                    <a href="http://www.mgtv.com/" target="_blank"><img src="/imgs/ico_link_mg.png"></a>
+                    <p>芒果TV视频</p>
+                </li>
+                <li>
+                    <a href="http://www.tudou.com/" target="_blank"><img src="/imgs/ico_link_td.png"></a>
+                    <p>土豆视频</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var iframeDiv = document.querySelector("#iframe_div");
+        var input = document.querySelector("#input");
+        var jiekou = 'https://jx.m3u8.tv/jiexi/?url=', url = null;
+        function jkChanged(v){
+            jiekou = v.value;
+            play();
+        }
+        function play() {
+            url = input.value.trim();
+            if (jiekou && url) {
+                var link = jiekou + url;
+                iframeDiv.innerHTML = '<iframe src="' + link + '">';
+            }
+        }
+    </script>
+</body>
+</html>

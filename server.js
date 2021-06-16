@@ -16,13 +16,11 @@ const cookieParser      = require('cookie-parser');
 const moment            = require('moment');
 const app               = express();
 
-
-
 global.appSettings = settings
 global.BaseDir = __dirname;
 
 var adaro = require('adaro');
-const Router            = require(`./routers/${NODE_ROUTER}/router`);
+const Router            = require('./routers/router');
 const httpServer        = http.createServer(app);
 const path              = require('path');
 app.use(cookieParser('hyb_szm_sec'));
