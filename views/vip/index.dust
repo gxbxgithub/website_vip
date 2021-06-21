@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
-    <title>解析-vip视频在线解析</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <title>青蛙解析-vip视频在线解析</title>
+    <meta name="keywords" content="vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析">
+    <meta name="description" content="本站提供vip视频在线免费解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，芒果vip解析服务！">
+    <link rel="stylesheet" href="/css/index.css">       
 </head>
 <body>
     <div class="main_div">
         <div class="header_div">
             <div class="layout">
-                <a class="logo" href="/">解析-vip视频在线解析</a>
+                <a class="logo" href="/">青蛙解析-vip视频在线解析</a>
                 <p class="warning">接口已更新，本站会在每天清晨检测和更新vip接口</p>
                 <ul>
-                    <li><a href="">天猫优惠券</a></li>
-                    <li><a href="">资源下载</a></li>
+                    <li><a target="__blank" href="https://youpin.guoxb.com/">天猫优惠券</a></li>
+                    <!-- <li><a href="">资源下载</a></li> -->
                 </ul>
             </div>
         </div>
@@ -34,8 +36,8 @@
                 </select>
                 <input id="input" type="text" placeholder="请输入视频播放地址">
                 <div class="btns">
-                    <button onclick="play()">立即播放</button>
-                    <button>在手机观看</button>
+                    <button onclick="play()" style="margin-right: 0;">立即播放</button>
+                    <!-- <button>在手机观看</button> -->
                 </div>
             </div>
             <div class="iframe_div" id="iframe_div">
@@ -89,6 +91,14 @@
                 iframeDiv.innerHTML = '<iframe src="' + link + '">';
             }
         }
+
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d0d8112e92401ac8327376f95b75b010";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </body>
 </html>
