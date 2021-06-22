@@ -16,7 +16,7 @@
                 <a class="logo" href="/">青蛙解析-vip视频在线解析</a>
                 <p class="warning">接口已更新，本站会在每天清晨检测和更新vip接口</p>
                 <ul>
-                    <li><a target="__blank" href="https://youpin.guoxb.com/">天猫优惠券</a></li>
+                    <li><a target="__blank" href="https://qwjx.vip/" onclick="_hmt.push(['_trackEvent', 'youpin', 'click'])">天猫优惠券</a></li>
                     <!-- <li><a href="">资源下载</a></li> -->
                 </ul>
             </div>
@@ -34,10 +34,13 @@
                     <option value="https://jx.618g.com/?url=">接口6</option>
                     <option value="https://okjx.cc/?url=">接口7</option>
                 </select>
-                <input id="input" type="text" placeholder="请输入视频播放地址">
+                <div class="input">
+                    <a class="clear" onclick="document.querySelector('#input').value = '';document.querySelector('#input').focus();"></a>
+                    <input id="input" type="text" placeholder="请输入视频播放地址" value="{url}">
+                </div>
                 <div class="btns">
-                    <button onclick="play()" style="margin-right: 0;">立即播放</button>
-                    <!-- <button>在手机观看</button> -->
+                    <button onclick="play()">立即播放</button>
+                    <button onclick="playToMobile()">在手机观看</button>
                 </div>
             </div>
             <div class="iframe_div" id="iframe_div">
@@ -74,6 +77,16 @@
                 </li>
             </ul>
         </div>
+
+        <div class="static_alert_view" id="alert">
+            <div class="alert qrcode_alert">
+                <a class="close" onclick="document.querySelector('#alert').style.display = 'none'"></a>
+                <p class="tle check_bg_success">手机扫描二维码</p>
+                <div class="qrcode">
+                    <img id="qrcode" src="">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -85,11 +98,21 @@
             play();
         }
         function play() {
+            _hmt.push(['_trackEvent', 'video', 'click', 'play']);
             url = input.value.trim();
+            if (!url) {
+                input.focus();
+                return;
+            }
             if (jiekou && url) {
                 var link = jiekou + url;
                 iframeDiv.innerHTML = '<iframe src="' + link + '">';
             }
+        }
+        function playToMobile() {
+            var dateStr = Math.random();
+            document.getElementById("qrcode").src = '/api/qr_code?url=' + input.value.trim() + '&time=' + dateStr;
+            document.querySelector('#alert').style.display = 'block';
         }
 
         var _hmt = _hmt || [];

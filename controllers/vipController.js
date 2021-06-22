@@ -1,3 +1,6 @@
-exports.index = async (req, res) => {
-    res.render('vip/index');
+exports = module.exports = {
+    index(req, res) {
+        let url = req.query.url;
+        res.render('vip/index', {url});
+    },
 }
