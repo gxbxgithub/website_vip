@@ -2,7 +2,7 @@ version: "3.8"
 services:
     website:
         build: ./
-        container_name: website_2021_yml
+        container_name: website_2021
         restart: always
         ports:
-            - 3100:3200
+            - 3200:3200
