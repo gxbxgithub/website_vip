@@ -2,6 +2,7 @@ FROM node:8.9.0
 
 RUN mkdir -p /data/api
 
+
 COPY ./ /data/api
 
 RUN mkdir /data/api/logs
