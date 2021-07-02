@@ -16,7 +16,7 @@
                 <a class="logo" href="/">青蛙解析-vip视频在线解析</a>
                 <p class="warning">接口已更新，本站会在每天清晨检测和更新vip接口</p>
                 <ul>
-                    <li><a target="__blank" href="https://qwjx.vip/" onclick="_hmt.push(['_trackEvent', 'youpin', 'click'])">天猫优惠券</a></li>
+                    <li><a target="__blank" href="https://youpin.qwjx.vip/" onclick="_hmt.push(['_trackEvent', 'youpin', 'click'])">天猫优惠券</a></li>
                     <!-- <li><a href="">资源下载</a></li> -->
                 </ul>
             </div>
@@ -93,7 +93,7 @@
     <script>
         var iframeDiv = document.querySelector("#iframe_div");
         var input = document.querySelector("#input");
-        var jiekou = 'https://jx.m3u8.tv/jiexi/?url=', url = null;
+        var jiekou = 'https://api.sigujx.com/?url=', url = null;
         function jkChanged(v){
             jiekou = v.value;
             play();
