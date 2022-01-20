@@ -24,7 +24,7 @@ RUN chmod a+x /data/api/entrypoint.sh
 #修改docker时区
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
 
-EXPOSE 3200
+EXPOSE 3300
 
 CMD ./entrypoint.sh dev web
 
