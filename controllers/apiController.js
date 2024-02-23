@@ -10,5 +10,5 @@ exports = module.exports = {
         var img = qr.image(qr_url, { size: 10 });
         res.writeHead(200, { 'Content-Type': 'image/png' });
         img.pipe(res);
-    },
+    }
 }
